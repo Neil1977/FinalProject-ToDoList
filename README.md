@@ -50,4 +50,4 @@ Information sources:
 •	Online research – N/A
 
 •	Template to help basis or creating Planner/To-Do App – BEING PROVIDED (SEE CODING ABILITY ABOVE)
-![image](https://user-images.githubusercontent.com/109810029/189669905-1124b3cc-4086-4ca4-8adc-0b1a260b2932.png)
+
