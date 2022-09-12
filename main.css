@@ -44,7 +44,7 @@ h3 {
     color: var(--dark);
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
 h4 {
@@ -158,7 +158,9 @@ input:checked ~ .bubble::after {
     font-size: 1.125rem;
     padding: 1rem 1.5rem;
     color: #FFF;
-    background-color: var(--personal-glow);
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    box-shadow: var(--personal-glow);
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
@@ -180,4 +182,52 @@ input:checked ~ .bubble::after {
     box-shadow: var(--shadow);
     margin-bottom: 1rem;
 }
+
+.todo-item label {
+    display: block;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+.todo-item .todo-content {
+    flex: 1 1 0%;
+}
+
+.todo-item .todo-content input {
+    color: var(--dark);
+    font-size: 1.125rem;
+}
+
+.todo-item .actions {
+    display: flex;
+    align-items: center;
+}
+
+.todo-item .actions button {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    color: #FFF;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.todo-item .actions button:hover {
+    opacity: 0.75;
+}
+
+.todo-item .actions .edit {
+    margin-right: 0.5rem;
+    background-color: var(--primary);
+}
+
+.todo-item .actions .delete {
+    background-color: var(--danger);
+}
+
+.todo-item.done .todo-content input {
+    text-decoration: line-through;
+    color: var(--grey);
+}
+
 
