@@ -3,6 +3,7 @@
     --business: #3a82ee;
     --personal: var(--primary);
     --light: #EEE;
+    --grey: #aa8
     --dark: #313154;
     --danger: #ff5b57;
 
@@ -37,4 +38,15 @@ section {
     margin-bottom: 2rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+}
+
+h3 {
+    color: var(--dark);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0.5rem;
+}
+
+h4 {
+    color: --grey;
 }
