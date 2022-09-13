@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
     newTodoForm.addEventListener('submit', e => {
         e.preventDefault();
 
-//WANT TO USE BLOCK BELOW TO ADD DATE TO APP BUT ALSO ORDER ENTRIES BY DATE AND ADD ALERT NOISE WHEN DUE POSSIBLY
+//WANT TO USE BLOCK BELOW TO ADD DATE TO APP SCREEN, BUT ALSO ORDER ENTRIES BY DATE AND ADD ALERT NOISE WHEN DUE POSSIBLY
 
 //const dateElement = document.getElementById('date");
 //let options = { weekday:'long', month:'short', day:'numeric'};
@@ -52,7 +52,7 @@ function DisplayTodos () {
 
     //OR...?
 
-    // const sortedTodos = todos.slice().sort((a,b) => b.date - a.date)
+    //const sortedTodos = todos.slice().sort((a,b) => b.date - a.date)
 
     //OR...?
 
