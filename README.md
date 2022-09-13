@@ -18,11 +18,13 @@ The Dream:
 
 •	Search functionality to be able to type what you are trying to code to bring up templates (for loops etc) for those with memory retention problems. (link to Jordans existing repo and coding rooms content to scrape for code and make suggestions on Neurodiverse friendly U.I with copy and paste functionality?) – TOO COMPLEX TO ACHIEVE
 
-•	Direct technology issues reporting/resolution route also as above.
+•	Direct technology issues reporting/resolution route also as above. - TOO COMPLEX TO ACHIEVE
 
 •	Personal Planner  – CONFIRMED AS REALISTIC TO WORK ON FOR PROJECT FROM TEMPLATE USING JS/CSS/HTML (SEE CODING ABILITY BELOW)
 
-•	Ability to add any links/cheat sheets shared on slack. – POSSIBLE STRETCH ADDITION STILL
+•	Sort all entries into time/date order - Stretch target
+
+Add audio alert based on date/time - Stretch Target
 
 Potential barriers:
 
