@@ -37,7 +37,11 @@ function DisplayTodos () {
     const todoList = document.querySelector('#todo-list');
 
     todoList.innerHTML = '';
-    //amend with todos.sort(.......).forEach(todo => { - stretch target - Array.sort? - [11,2,22,1].sort((a, b) => a - b) etc
+    //amend with - todos.sort(.......).forEach(todo => { - stretch target - Array.sort? - [11,2,22,1].sort((a, b) => a - b) etc?
+    
+    //array.sort(function(a,b){
+    //return new Date(b.date) - new Date(a.date);
+    //});
     todos.forEach(todo => {
         const todoItem = document.createElement('div');
         todoItem.classList.add('todo-item')
