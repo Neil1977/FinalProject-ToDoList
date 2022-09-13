@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
     newTodoForm.addEventListener('submit', e => {
         e.preventDefault();
 
-//WANT TO USE BLOCK BELOW TO ADD DATE TO APP BUT ALSO ORDER ENTRIES BY DATE AND ADD ALERT NOISE WHEN DUE
+//WANT TO USE BLOCK BELOW TO ADD DATE TO APP BUT ALSO ORDER ENTRIES BY DATE AND ADD ALERT NOISE WHEN DUE POSSIBLY
 
 //const dateElement = document.getElementById('date");
 //let options = { weekday:'long', month:'short', day:'numeric'};
@@ -46,7 +46,7 @@ function DisplayTodos () {
     todoList.innerHTML = '';
     //ORDER TODOS INTO DATE/TIME? - INSERT INTO EXISTING CODE HOW?
 
-    //todos.sort(function(a,b).forEach(todo => {
+    //todos.sort(DateTime(a,b).forEach(todo => {
     //return new Date(b.date) - new Date(a.date);
     //});
 
