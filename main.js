@@ -50,6 +50,18 @@ function DisplayTodos () {
     //return new Date(b.date) - new Date(a.date);
     //});
 
+    //OR...?
+
+    // const sortedTodos = todos.slice().sort((a,b) => b.date - a.date)
+
+    //OR...?
+
+    //const todoList = todos.sort((a,b) => {
+    //const aDate = new Date(a.date + ' ' + a.time)
+    //const bDate = new Date(b.date + ' ' + b.time)
+    //returnbDate.getTime() - aDate.getTime()
+    //})
+
     todos.forEach(todo => {
         const todoItem = document.createElement('div');
         todoItem.classList.add('todo-item')
