@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
 
     newTodoForm.addEventListener('submit', e => {
         e.preventDefault();
-
+//want to use block below to reorder all events into date order - stretch target
         const todo = {
             content: e.target.elements.content.value,
             category: e.target.elements.category.value,
@@ -37,7 +37,7 @@ function DisplayTodos () {
     const todoList = document.querySelector('#todo-list');
 
     todoList.innerHTML = '';
-
+    //amend with todos.sort(.......).forEach(todo => { - stretch target
     todos.forEach(todo => {
         const todoItem = document.createElement('div');
         todoItem.classList.add('todo-item')
