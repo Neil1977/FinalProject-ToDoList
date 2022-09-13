@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
 
 //WANT TO USE BLOCK BELOW TO ADD DATE TO APP SCREEN, BUT ALSO ORDER ENTRIES BY DATE AND ADD ALERT NOISE WHEN DUE POSSIBLY
 
-//const dateElement = document.getElementById('date");
+//const dateElement = document.getElementById('date');
 //let options = { weekday:'long', month:'short', day:'numeric'};
 //let today = new Date();
 //dateElement.innerHTML = today.toLocaleDateString("en-UK", options);
