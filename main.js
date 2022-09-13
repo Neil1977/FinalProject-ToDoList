@@ -46,7 +46,7 @@ function DisplayTodos () {
     todoList.innerHTML = '';
     //ORDER TODOS INTO DATE/TIME? - INSERT INTO EXISTING CODE HOW?
 
-    //todos.sort(DateTime(a,b).forEach(todo => {
+    //todos.sort(createdAt(a,b).forEach(todo => {
     //return new Date(b.date) - new Date(a.date);
     //});
 
