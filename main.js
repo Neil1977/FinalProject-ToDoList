@@ -13,7 +13,14 @@ window.addEventListener('load', () => {
 
     newTodoForm.addEventListener('submit', e => {
         e.preventDefault();
-//want to use block below to reorder all events into date order - stretch target
+
+//WANT TO USE BLOCK BELOW TO ADD DATE TO APP BUT ALSO ORDER ENTRIES BY DATE AND ADD ALERT NOISE WHEN DUE
+
+//const dateElement = document.getElementById('date");
+//let options = { weekday:'long', month:'short', day:'numeric'};
+//let today = new Date();
+//dateElement.innerHTML = today.toLocaleDateString("en-UK", options);
+
         const todo = {
             content: e.target.elements.content.value,
             category: e.target.elements.category.value,
@@ -37,11 +44,12 @@ function DisplayTodos () {
     const todoList = document.querySelector('#todo-list');
 
     todoList.innerHTML = '';
-    //amend with - todos.sort(.......).forEach(todo => { - stretch target - Array.sort? - [11,2,22,1].sort((a, b) => a - b) etc?
-    
-    //array.sort(function(a,b){
+    //ORDER TODOS INTO DATE/TIME? - INSERT INTO EXISTING CODE HOW?
+
+    //todos.sort(function(a,b).forEach(todo => {
     //return new Date(b.date) - new Date(a.date);
     //});
+
     todos.forEach(todo => {
         const todoItem = document.createElement('div');
         todoItem.classList.add('todo-item')
