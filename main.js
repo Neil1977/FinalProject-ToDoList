@@ -7,7 +7,7 @@ window.addEventListener('load', () => {
 
     nameInput.value = username;
 
-    nameInput.addEventListener('change',e => {
+    nameInput.addEventListener('change', e => {
         localStorage.setItem('username', e.target.value);
     })
 
@@ -65,7 +65,7 @@ function DisplayTodos () {
         edit.classList.add('edit');
         deleteButton.classList.add('delete');
 
-        content.innerHTML = ` <input type="text" value=${todo.content}"readonly>`;
+        content.innerHTML = ` <input type="text" value="${todo.content}" readonly>`;
         edit.innerHTML = 'Edit';
         deleteButton.innerHTML = 'Delete';
 
