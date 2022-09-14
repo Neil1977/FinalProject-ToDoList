@@ -19,17 +19,15 @@
     padding: 60px;
     text-align: center;
     background-color: white;
-    font-size: 30px;
-  }
+    }
   
 
   .header-image2 {
     background-image:url("https://pathwayctm.com/wp-content/uploads/2017/08/direct_line_group_logo_tall-e1472651551206.png");
-    padding: 60px;
+    padding: 200px;
     text-align: center;
     background-color: white;
-    font-size: 30px;
-  }
+    }
   /*TO LINK TO HEADER WITH IMAGES - SEE READ ME AND HTML HEADER COMMENTED OUT*/
 
 * {
