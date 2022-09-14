@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
     newTodoForm.addEventListener('submit', e => {
         e.preventDefault();
 
-        //WANT TO USE BLOCK BELOW TO ADD DATE TO APP SCREEN, BUT ALSO ORDER ENTRIES BY DATE AND ADD ALERT NOISE WHEN DUE POSSIBLY?
+        //WANT TO USE BLOCK BELOW TO ADD DATE TO APP SCREEN
 
         //const dateElement = document.getElementById('date');
         //let options = { weekday:'long', month:'short', day:'numeric'};
@@ -33,7 +33,7 @@ window.addEventListener('load', () => {
         localStorage.setItem('todos', JSON.stringify(todos));
 
         e.target.reset();
-
+        //Display more of todo in visible list (without having to use "edit" button and cursor across)
         DisplayTodos();
     })
 
@@ -49,7 +49,7 @@ function DisplayTodos() {
         .forEach(todo => {
             const todoItem = document.createElement('div');
             todoItem.classList.add('todo-item')
-
+            //Add button to resort entries into ascending/descending too if needed?
             const label = document.createElement('label');
             const input = document.createElement('input');
             const span = document.createElement('span');
@@ -91,6 +91,13 @@ function DisplayTodos() {
                 todoItem.classList.add('done');
             }
 
+            //CODE SNIPET TO ADD ALERT SOUND IF TODO OVERDUE? (SEE READ ME ALSO - AFTER DATE/TIME ADDED - ALERT WHEN 20:00 REACHED ON DAY ADDED AND NOT TICKED MARKED AS "DONE"/CROSSED OUT ON FRONT END)
+            //var mp3_url = 'https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3';
+            //(new Audio(mp3_url)).play()
+            //for (i=0; i<10; i++) {
+            //setTimeout(function(){(new Audio(mp3_url)).play()}, i * 1000)
+            //}
+
             input.addEventListener('click', e => {
                 todo.done = e.target.checked;
                 localStorage.setItem('todos', JSON.stringify(todos));
@@ -124,12 +131,5 @@ function DisplayTodos() {
         })
 }
 
-//CODE SNIPETS TO ADD ALERT SOUND IF TODO OVERDUE? (SEE READ ME ALSO - AFTER DATE/TIME ADDED - ALERT WHEN 20:00 REACHED ON DAY ADDED AND NOT TICKED AS DONE OR LINK TO RED/DANGER IN CSS ln 244 - 266 MAYBE?)
-
-//var mp3_url = 'https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3';
-//(new Audio(mp3_url)).play()
-//for (i=0; i<10; i++) {
-    //setTimeout(function(){(new Audio(mp3_url)).play()}, i * 1000)
-  //}
 
 
