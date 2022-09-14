@@ -13,7 +13,7 @@
     --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
 }
 
-/*TO LINK TO HEADER WITH IMAGES - SEE READ ME AND HTML HEADER COMMENTED OUT*/
+
 .header-image {
     background-image:url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
     padding: 60px;
@@ -28,7 +28,21 @@
     text-align: center;
     background-color: white;
     }
-  /*TO LINK TO HEADER WITH IMAGES - SEE READ ME AND HTML HEADER COMMENTED OUT*/
+ 
+
+  /*.footer-image {
+    background-image:url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
+    padding: 60px;
+    text-align: center;
+    background-color: white;
+    }
+
+    .footer-image2 {
+        background-image:url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
+        padding: 60px;
+        text-align: center;
+        background-color: white;
+        }*/
 
 * {
     margin: 0;
