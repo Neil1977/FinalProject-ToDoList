@@ -23,29 +23,35 @@ The Dream:
  
  Potential barriers:
 
-•	Timescales – DISCUSSED SEE ABOVE
+- Timescales – DISCUSSED SEE ABOVE
 
-•	Level of coding support needed – DISCUSSED SEE ABOVE
+- Level of coding support needed – DISCUSSED SEE ABOVE
 
-•	Security concerns – N/A
+- Security concerns – N/A
 
-•	Licencing/copyright – N/A
+- Licencing/copyright – N/A
 
-•	Flexibility for ad-hoc changes if needed – N/A
+- Flexibility for ad-hoc changes if needed – N/A
 
 
 
 MVP:
 
- - Todo App  – CONFIRMED AS REALISTIC TO WORK ON FOR PROJECT FROM TEMPLATE USING JS/CSS/HTML (SEE CODING ABILITY BELOW)
+ - Todo App  – CONFIRMED AS REALISTIC TO WORK ON FOR PROJECT USING JS/CSS/HTML (SEE CODING ABILITY ABOVE) - BASE APP CREATED, NOW BRANCHED TO FEATURE TO CONTINUE BELOW
 
-- Add date/time to front of App - stretch target
+- Add date/time to front of App - Stretch target - STILL TO COMPLETE - CODE COMMENTED IN FEATURE BRANCH ONLY
 
- - Sort all entries into time/date order - Stretch target
+ - Sort all entries into time/date order - COMPLETED
 
- - Add audio alert based on date/time (linked to time 20:00 inday etc or to "danger color - red"?) - Stretch Target
+ - Add audio alert based on date/time (linked to time 20:00 inday) - Stretch Target - STILL TO COMPLETE - CODE COMMENTED IN FEATURE BRANCH ONLY
  
- - Mobile compatible? (media query)
+ - Add button to resort entries into ascending/descending - STRETCH TARGET
+ 
+ - Make header stay in place while scrolling down list (footer to stay static) - STRETCH TARGET
+ 
+ - Display more of todo in visible list (without having to use "edit" button and cursor across) - STRETCH TARGET
+ 
+ - Mobile compatible? (media query) - STRETCH TARGET
  
  - Publish/Present
  
@@ -53,12 +59,13 @@ MVP:
 
 Information sources:
 
-•	DL Neurodiverse community – N/A
+- DL Neurodiverse community – N/A
 
-•	Multiverse Neurodiverse community – N/A
+- Multiverse Neurodiverse community – N/A
 
-•	Other Neurodiverse colleagues for challenges faced on course to address as well as above – COMPLETED BUT NO LONGER GOING WITH FULL OVERVIEW AS ABOVE
+- Other Neurodiverse colleagues for challenges faced on course to address as well as above – COMPLETED BUT NO LONGER GOING WITH FULL OVERVIEW AS ABOVE
 
-•	Online research – N/A
+- Online research – N/A
 
-•	Template to help basis or creating Planner/To-Do App – BEING PROVIDED (SEE CODING ABILITY ABOVE)
+- YouTube To-Do App tutorial for basic framework – (SEE CODING ABILITY ABOVE)
+
