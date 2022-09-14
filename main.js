@@ -149,8 +149,3 @@ function DisplayTodos () {
   //}
 
 
-//MULTIVERSE LOGO FOR ADDING HEADER (see readme)
-//https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1
-
-//DLG LOGO TO ADD TO HEADER (see readme)
-//https://pathwayctm.com/wp-content/uploads/2017/08/direct_line_group_logo_tall-e1472651551206.png
