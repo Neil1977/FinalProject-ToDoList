@@ -33,22 +33,20 @@
  
 /*ADDED IMAGES TO FOOTER - NEED TO SCALE DOWN IMAGE SIZE IN FOOTER AND HEADER*/
   .footer-image {
-        position:fixed;
-        bottom:0;
+        /*position:fixed;
+        bottom:0;*/
         background-image:url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
-        /*background-size:cover;*/
+        background-position:bottom center;
         width:100%;
-        height: fit-content;
         background-color: white;
     }
 
     .footer-image2 {
-        position:fixed;
-        bottom:0;
+        /*position:fixed;
+        bottom:0;*/
         background-image:url("https://pathwayctm.com/wp-content/uploads/2017/08/direct_line_group_logo_tall-e1472651551206.png");
-        /*background-size:cover;*/
+        background-position:bottom center;
         width: 100%;
-        height: fit-content;
         background-color: white;
         }
 
