@@ -14,12 +14,12 @@ window.addEventListener('load', () => {
     newTodoForm.addEventListener('submit', e => {
         e.preventDefault();
 
-//WANT TO USE BLOCK BELOW TO ADD DATE TO APP SCREEN, BUT ALSO ORDER ENTRIES BY DATE AND ADD ALERT NOISE WHEN DUE POSSIBLY?
+        //WANT TO USE BLOCK BELOW TO ADD DATE TO APP SCREEN, BUT ALSO ORDER ENTRIES BY DATE AND ADD ALERT NOISE WHEN DUE POSSIBLY?
 
-//const dateElement = document.getElementById('date');
-//let options = { weekday:'long', month:'short', day:'numeric'};
-//let today = new Date();
-//dateElement.innerHTML = today.toLocaleDateString("en-UK", options);
+        //const dateElement = document.getElementById('date');
+        //let options = { weekday:'long', month:'short', day:'numeric'};
+        //let today = new Date();
+        //dateElement.innerHTML = today.toLocaleDateString("en-UK", options);
 
         const todo = {
             content: e.target.elements.content.value,
@@ -40,7 +40,7 @@ window.addEventListener('load', () => {
     DisplayTodos();
 })
 
-function DisplayTodos () {
+function DisplayTodos() {
     const todoList = document.querySelector('#todo-list');
 
     todoList.innerHTML = '';

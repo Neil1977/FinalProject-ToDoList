@@ -15,40 +15,40 @@
 
 /*ADDED IMAGES TO HEADER - NEED TO SCALE DOWN IMAGE SIZE IN FOOTER AND HEADER*/
 .header-image {
-    background-image:url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
+    background-image: url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
     /*background-size: cover;*/
     padding: 60px;
     height: 5%;
     background-color: white;
-    }
-  
+}
 
-  .header-image2 {
-    background-image:url("https://pathwayctm.com/wp-content/uploads/2017/08/direct_line_group_logo_tall-e1472651551206.png");
+
+.header-image2 {
+    background-image: url("https://pathwayctm.com/wp-content/uploads/2017/08/direct_line_group_logo_tall-e1472651551206.png");
     /*background-size: cover;*/
     padding: 200px;
     height: 5%;
     background-color: white;
-    }
- 
-/*ADDED IMAGES TO FOOTER - NEED TO SCALE DOWN IMAGE SIZE IN FOOTER AND HEADER*/
-  .footer-image {
-        /*position:fixed;
-        bottom:0;*/
-        background-image:url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
-        background-position:bottom center;
-        width:100%;
-        background-color: white;
-    }
+}
 
-    .footer-image2 {
-        /*position:fixed;
+/*ADDED IMAGES TO FOOTER - NEED TO SCALE DOWN IMAGE SIZE IN FOOTER AND HEADER*/
+.footer-image {
+    /*position:fixed;
         bottom:0;*/
-        background-image:url("https://pathwayctm.com/wp-content/uploads/2017/08/direct_line_group_logo_tall-e1472651551206.png");
-        background-position:bottom center;
-        width: 100%;
-        background-color: white;
-        }
+    background-image: url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
+    background-position: bottom center;
+    width: 100%;
+    background-color: white;
+}
+
+.footer-image2 {
+    /*position:fixed;
+        bottom:0;*/
+    background-image: url("https://pathwayctm.com/wp-content/uploads/2017/08/direct_line_group_logo_tall-e1472651551206.png");
+    background-position: bottom center;
+    width: 100%;
+    background-color: white;
+}
 
 * {
     margin: 0;
@@ -57,12 +57,13 @@
     font-family: 'montserrat', sans-serif;
 }
 
-input:not([type="radio"]):not([type="checkbox"]), button {
-appearance: none;
-border: none;
-outline: none;
-background: none;
-cursor: initial;
+input:not([type="radio"]):not([type="checkbox"]),
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
 }
 
 body {
@@ -145,14 +146,14 @@ input[type="checkbox"] {
 }
 
 .bubble {
-   display: flex; 
-   align-items: center;
-   justify-content: center;
-   width: 20px;
-   height: 20px;
-   border-radius: 50%;
-   border: 2px solid var(--business);
-   box-shadow: var(--business-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid var(--business);
+    box-shadow: var(--business-glow);
 }
 
 .bubble.personal {
@@ -177,7 +178,7 @@ input[type="checkbox"] {
     box-shadow: var(--personal-glow);
 }
 
-input:checked ~ .bubble::after {
+input:checked~.bubble::after {
     width: 10px;
     height: 10px;
     opacity: 1;
@@ -266,5 +267,3 @@ input:checked ~ .bubble::after {
     text-decoration: line-through;
     color: var(--grey);
 }
-
-
