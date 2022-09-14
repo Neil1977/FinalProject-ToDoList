@@ -29,8 +29,8 @@
     background-color: white;
     }
  
-
-  /*.footer-image {
+/*ADDING IMAGES TO FOOTER? - ADDS BUT TO HEADER CURRENTLY SO COMMENTED OUT - ALSO NEED TOSCALE DOWN SIZE IN FOOTER
+  .footer-image {
     background-image:url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
     padding: 60px;
     text-align: center;
