@@ -13,7 +13,7 @@
     --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
 }
 
-
+/*ADDED IMAGES TO HEADER - NEED TO SCALE DOWN IMAGE SIZE IN FOOTER AND HEADER*/
 .header-image {
     background-image:url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
     padding: 60px;
@@ -29,7 +29,7 @@
     background-color: white;
     }
  
-/*ADDING IMAGES TO FOOTER? - NEED TO SCALE DOWN IMAGE SIZE IN FOOTER AND HEADER*/
+/*ADDED IMAGES TO FOOTER - NEED TO SCALE DOWN IMAGE SIZE IN FOOTER AND HEADER*/
   .footer-image {
         position:fixed;
         bottom:0;
