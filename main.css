@@ -13,6 +13,16 @@
     --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
 }
 
+/*TO LINK TO HEADER WITH IMAGES - SEE READ ME AND HTML HEADER COMMENTED OUT
+/*.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 30px;
+  }
+  */
+
 * {
     margin: 0;
     padding: 0;
