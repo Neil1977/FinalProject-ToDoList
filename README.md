@@ -8,25 +8,20 @@ The Dream:
 
 
 
-•	Funnel Outlook/Slack/MS Teams/WhatsApp/Calendly/Google Calendar/Gathertown messages into one. (with auto reply DO NOT DISTURB if in focus mode) – TOO COMPLEX TO ACHIEVE
+ - Funnel Outlook/Slack/MS Teams/WhatsApp/Calendly/Google Calendar/Gathertown messages into one. (with auto reply DO NOT DISTURB if in focus mode) – TOO COMPLEX TO ACHIEVE
 
-•	Auto add all invites to one central to do list (meetings and projects deadlines etc) -TOO COMPLEX TO ACHIEVE
+ - Auto add all invites to one central to do list (meetings and projects deadlines etc) -TOO COMPLEX TO ACHIEVE
 
-•	Auto reminders on 1 channel (which?) – TOO COMPLEX TO ACHIEVE
+ - Auto reminders on 1 channel (which?) – TOO COMPLEX TO ACHIEVE
 
-•	Confidential “I need help” button (like coding rooms hand raise that doesn’t work) Creates alert to all coaches across all cohorts to respond (if cohort specific coach unavailable). – TOO COMPLEX TO ACHIEVE
+ - Confidential “I need help” button (like coding rooms hand raise that doesn’t work) Creates alert to all coaches across all cohorts to respond (if cohort specific coach unavailable). – TOO COMPLEX TO ACHIEVE
 
-•	Search functionality to be able to type what you are trying to code to bring up templates (for loops etc) for those with memory retention problems. (link to Jordans existing repo and coding rooms content to scrape for code and make suggestions on Neurodiverse friendly U.I with copy and paste functionality?) – TOO COMPLEX TO ACHIEVE
+ - Search functionality to be able to type what you are trying to code to bring up templates (for loops etc) for those with memory retention problems. (link to Jordans existing repo and coding rooms content to scrape for code and make suggestions on Neurodiverse friendly U.I with copy and paste functionality?) – TOO COMPLEX TO ACHIEVE
 
-•	Direct technology issues reporting/resolution route also as above. - TOO COMPLEX TO ACHIEVE
-
-•	Personal Planner  – CONFIRMED AS REALISTIC TO WORK ON FOR PROJECT FROM TEMPLATE USING JS/CSS/HTML (SEE CODING ABILITY BELOW)
-
-•	Sort all entries into time/date order - Stretch target
-
-Add audio alert based on date/time - Stretch Target
-
-Potential barriers:
+ - Direct technology issues reporting/resolution route also as above. - TOO COMPLEX TO ACHIEVE
+ 
+ 
+ Potential barriers:
 
 •	Timescales – DISCUSSED SEE ABOVE
 
@@ -40,6 +35,21 @@ Potential barriers:
 
 
 
+MVP:
+
+ - Todo App  – CONFIRMED AS REALISTIC TO WORK ON FOR PROJECT FROM TEMPLATE USING JS/CSS/HTML (SEE CODING ABILITY BELOW)
+
+- Add date/time to front of App - stretch target
+
+ - Sort all entries into time/date order - Stretch target
+
+ - Add audio alert based on date/time (linked to time 20:00 inday etc or to "danger color - red"?) - Stretch Target
+ 
+ - Mobile compatible? (media query)
+ 
+ - Publish/Present
+ 
+ 
 
 Information sources:
 
