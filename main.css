@@ -13,57 +13,44 @@
     --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
 }
 
-/*ADDED IMAGES TO HEADER - CAN IT BE MADE TO ROLL UP AND DOWN WITH MOUSE NOW (NON-STATIC)*/
+/*CAN IT BE MADE TO ROLL UP AND DOWN WITH MOUSE NOW (NON-STATIC?)*/
 header {
+    position: sticky;
     display: flex;
     flex-direction: column;
-    height: 40vh;
+    height: 30vh;
     width: 100vw;
-    border: solid 1px black
+}
+
+.bg-img {
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
 }
 
 .header-image {
     background-image: url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
-    background-repeat: repeat-x;
-    background-position: center;
     height: 25%;
-    background-color: white;
 }
 
 
 .header-image2 {
     background-image: url("https://pathwayctm.com/wp-content/uploads/2017/08/direct_line_group_logo_tall-e1472651551206.png");
-    background-repeat: repeat-x;
-    background-position: center;
     height: 75%;
-    background-color: white;
 }
-
-/*ADDED IMAGES TO FOOTER - ADDED IMAGES TO FOOTER - NOW ADDED AT BOTTOM - STATIC IS OK - REPLACE IMAGES DUE TO SIZE?*/
 
 footer {
     display: flex;
     flex-direction: column;
     height: 10vh;
     width: 100vw;
-    border: solid 1px black
 }
 
 .footer-image {
     background-image: url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
-    background-repeat: repeat-x;
-    background-position: bottom center;
     height: 100%;
-    background-color: white;
 }
-
-/*.footer-image2 {
-    background-image: url("https://pathwayctm.com/wp-content/uploads/2017/08/direct_line_group_logo_tall-e1472651551206.png");
-    background-repeat: repeat-x;
-    background-position: bottom center;
-    height: 10%;
-    background-color: white;
-} */
 
 * {
     margin: 0;
@@ -85,6 +72,7 @@ body {
     background: var(--light);
     color: var(--dark);
 }
+
 
 section {
     margin-top: 2rem;
