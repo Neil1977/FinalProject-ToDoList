@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
 
 
 
-        //ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC)
+        //ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC) - see also index.html ln29 and main.css ln42
         //function ????? - TBC (ternary reversal of this linked to buton? - todos.sort((a, b) => b.createdAt - a.createdAt)??
 
         const todo = {
