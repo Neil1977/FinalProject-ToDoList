@@ -14,6 +14,30 @@ window.addEventListener('load', () => {
     newTodoForm.addEventListener('submit', e => {
         e.preventDefault();
 
+
+
+        //ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC)
+        //function ????? - TBC (ternary reversal of this linked to buton? - todos.sort((a, b) => b.createdAt - a.createdAt)??
+
+        const todo = {
+            content: e.target.elements.content.value,
+            category: e.target.elements.category.value,
+            done: false,
+            createdAt: new Date().getTime()
+        }
+
+        todos.push(todo);
+
+        localStorage.setItem('todos', JSON.stringify(todos));
+
+        e.target.reset();
+        
+        DisplayTodos();
+    })
+
+    DisplayTodos();
+})
+
         //WANT TO USE  CODE BLOCK TO ADD DATE/TIME TO APP SCREEN WITHIN HEADER:
         const timeElement = document.querySelector(".time");
         const dateElement = document.querySelector(".date");
@@ -41,27 +65,7 @@ window.addEventListener('load', () => {
         }, 200);
         //WANT TO USE  CODE BLOCK TO ADD DATE TO APP SCREEN WITHIN HEADER:
 
-        //ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC)
-        //function ????? - TBC (ternary reversal of this linked to buton? - todos.sort((a, b) => b.createdAt - a.createdAt)??
-
-        const todo = {
-            content: e.target.elements.content.value,
-            category: e.target.elements.category.value,
-            done: false,
-            createdAt: new Date().getTime()
-        }
-
-        todos.push(todo);
-
-        localStorage.setItem('todos', JSON.stringify(todos));
-
-        e.target.reset();
         
-        DisplayTodos();
-    })
-
-    DisplayTodos();
-})
 /*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
 function DisplayTodos() {
     const todoList = document.querySelector('#todo-list');
