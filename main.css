@@ -139,6 +139,7 @@ h4 {
     font-weight: 700;
 }
 
+/*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
 .create-todo input[type="text"] {
     display: block;
     width: 100%;
@@ -260,7 +261,7 @@ input:checked~.bubble::after {
 .todo-item .todo-content {
     flex: 1 1 0%;
 }
-
+/*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
 .todo-item .todo-content input {
     color: var(--dark);
     font-size: 1.125rem;

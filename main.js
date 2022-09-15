@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
     newTodoForm.addEventListener('submit', e => {
         e.preventDefault();
 
-        //WANT TO USE  CODE BLOCK TO ADD DATE TO APP SCREEN:
+        //WANT TO USE  CODE BLOCK TO ADD DATE/TIME TO APP SCREEN WITHIN HEADER:
         //const timeElement = document.querySelector(".time");
         //const dateElement = document.querySelector(".date");
 
@@ -39,7 +39,7 @@ window.addEventListener('load', () => {
             //timeElement.textContent = formatTime(now);
             //dateElement.textContent = formatDate(now);
         //}, 200);
-        //WANT TO USE  CODE BLOCK TO ADD DATE TO APP SCREEN:
+        //WANT TO USE  CODE BLOCK TO ADD DATE TO APP SCREEN WITHIN HEADER:
 
         const todo = {
             content: e.target.elements.content.value,
@@ -53,13 +53,13 @@ window.addEventListener('load', () => {
         localStorage.setItem('todos', JSON.stringify(todos));
 
         e.target.reset();
-        //Display more of todo in visible list (without having to use "edit" button and cursor across)
+        
         DisplayTodos();
     })
 
     DisplayTodos();
 })
-
+/*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
 function DisplayTodos() {
     const todoList = document.querySelector('#todo-list');
 
