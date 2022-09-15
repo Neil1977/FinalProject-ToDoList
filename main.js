@@ -61,11 +61,12 @@ setInterval(() => {
 
 
 /*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
-function DisplayTodos(isAscending = false) {
+function DisplayTodos(isAscending = true) {
     const todoList = document.querySelector('#todo-list');
 
     todoList.innerHTML = '';
     const sortOrder = (isAscending) ? (a, b) => b.createdAt - a.createdAt : (a, b) => a.createdAt - b.createdAt
+    /*LOGIC HERE FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NO*/
 
     todos.sort(sortOrder)
         .forEach(todo => {
@@ -78,7 +79,6 @@ function DisplayTodos(isAscending = false) {
             const actions = document.createElement('div');
             const edit = document.createElement('button');
             const deleteButton = document.createElement('button');
-
             input.type = 'checkbox';
             input.checked = todo.done;
             span.classList.add('bubble');
