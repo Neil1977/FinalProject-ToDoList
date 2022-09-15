@@ -47,7 +47,7 @@ MVP:
  
  - Add button to resort entries into ascending/descending - STRETCH TARGET
  
- - Make header stay in place while scrolling down list (footer to stay static) - STRETCH TARGET
+ - Make header stay in place while scrolling down list (footer to stay static) - COMPLETED
  
  - Display more of todo in visible list (without having to use "edit" button and cursor across) - STRETCH TARGET
  
