@@ -49,7 +49,7 @@ MVP:
  
  - Make header stay in place while scrolling down list (footer to stay static) - COMPLETED
  
- - Display more of todo in visible list (without having to use "edit" button and cursor across) - STRETCH TARGET - STILL TO COMPLETE
+ - Display more of todo in visible list (without having to use "edit" button and cursor across - Also display date & time stamp to automatically linked to time at top and to trigger alert @ 20:00 - SEE ABOVE) - STRETCH TARGET - STILL TO COMPLETE
  
  - Mobile compatible? (media query) - STRETCH TARGET - COMPLETED/NOT NEEDED DUE TO LAYOUT SCALING FINE ANYWAY
  
