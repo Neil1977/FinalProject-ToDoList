@@ -14,7 +14,7 @@ window.addEventListener('load', () => {
     newTodoForm.addEventListener('submit', e => {
         e.preventDefault();
 
-        //WANT TO USE  CODE BLOCK BELOW TO ADD DATE TO APP SCREEN:
+        //WANT TO USE  CODE BLOCK TO ADD DATE TO APP SCREEN:
 
         //const timeElement = document.querySelector(".time");
         //const dateElement = document.querySelector(".date");
@@ -40,6 +40,7 @@ window.addEventListener('load', () => {
             //timeElement.textContent = formatTime(now);
             //dateElement.textContent = formatDate(now);
         //}, 200);
+        //WANT TO USE  CODE BLOCK TO ADD DATE TO APP SCREEN:
 
         const todo = {
             content: e.target.elements.content.value,
