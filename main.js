@@ -41,6 +41,9 @@ window.addEventListener('load', () => {
         //}, 200);
         //WANT TO USE  CODE BLOCK TO ADD DATE TO APP SCREEN WITHIN HEADER:
 
+        //ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC)
+        //function ????? - TBC
+
         const todo = {
             content: e.target.elements.content.value,
             category: e.target.elements.category.value,

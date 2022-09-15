@@ -35,19 +35,33 @@ header {
     font-weight:400;
     font-family:'montserrat', sans-serif;
 }
-ADDING STYLE FOR DATE/TIME WIDGET
 
 .time {
     font-size: 3em;
     color: #313154;
     }
-/*ADDING STYLE FOR DATE/TIME WIDGET
+
 
 .date {
     margin-top: 12px;
     font-size: 1.75em;
 }
 ADDING STYLE FOR DATE/TIME WIDGET*/
+
+/*ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC)
+.dateFilter {
+    overflow:hidden;
+}
+.filterDiv {
+float: left;
+background-color: var(--primary);
+color: #EEE;
+width: 100px;
+line-height: 100px;
+text-align: center;
+margin: 2px;
+}
+*/
 
 .bg-img {
     background-repeat: repeat-x;
