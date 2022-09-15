@@ -14,10 +14,6 @@ window.addEventListener('load', () => {
     newTodoForm.addEventListener('submit', e => {
         e.preventDefault();
 
-
-
-        //ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC)//
-
         const todo = {
             content: e.target.elements.content.value,
             category: e.target.elements.category.value,
@@ -69,8 +65,8 @@ function DisplayTodos(isAscending = false) {
     const todoList = document.querySelector('#todo-list');
 
     todoList.innerHTML = '';
-    const sortOrder =(isAscending) ?  (a, b) => b.createdAt - a.createdAt: (a, b) => a.createdAt - b.createdAt
-    
+    const sortOrder = (isAscending) ? (a, b) => b.createdAt - a.createdAt : (a, b) => a.createdAt - b.createdAt
+
     todos.sort(sortOrder)
         .forEach(todo => {
             const todoItem = document.createElement('div');
