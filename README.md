@@ -39,19 +39,19 @@ MVP:
 
  - Todo App  – CONFIRMED AS REALISTIC TO WORK ON FOR PROJECT USING JS/CSS/HTML (SEE CODING ABILITY ABOVE) - BASE APP CREATED, NOW BRANCHED TO FEATURE TO CONTINUE BELOW
 
-- Add date/time to front of App - Stretch target - STILL TO COMPLETE - CODE COMMENTED IN FEATURE BRANCH ONLY
+- Add date/time to front of App - Stretch target - COMPLETED
 
  - Sort all entries into time/date order - COMPLETED
 
  - Add audio alert based on date/time (linked to time 20:00 inday) - Stretch Target - STILL TO COMPLETE - CODE COMMENTED IN FEATURE BRANCH ONLY
  
- - Add button to resort entries into ascending/descending - STRETCH TARGET
+ - Add button to resort entries into ascending/descending - STRETCH TARGET - STILL TO COMPLETE - COMMENTS AND POSSIBLE CODE ONLY CURRENTLY
  
  - Make header stay in place while scrolling down list (footer to stay static) - COMPLETED
  
- - Display more of todo in visible list (without having to use "edit" button and cursor across) - STRETCH TARGET
+ - Display more of todo in visible list (without having to use "edit" button and cursor across) - STRETCH TARGET - STILL TO COMPLETE
  
- - Mobile compatible? (media query) - STRETCH TARGET
+ - Mobile compatible? (media query) - STRETCH TARGET - COMPLETED/NOT NEEDED DUE TO LAYOUT SCALING FINE ANYWAY
  
  - Publish/Present
  

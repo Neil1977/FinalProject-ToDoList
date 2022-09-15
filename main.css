@@ -23,33 +23,23 @@ header {
     width: 100vw;
 }
 
-/*ADDING STYLE FOR DATE/TIME WIDGET*/
-.datetime {
-    font-size: 16px;
-    padding: 24px;
-    color:#313154;
-    background: #EEE;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    border-right: 10px #313154 solid;
-    width:400px;
-    font-weight:400;
-    font-family:'montserrat', sans-serif;
-}
-
 .time {
+    margin-top: 12px;
     font-size: 3em;
     color: #313154;
+    padding-left: 1.5rem;
     }
 
 
 .date {
     margin-top: 12px;
     font-size: 1.75em;
+    color: #313154;
+    padding-left: 1.5rem;
 }
-/*ADDING STYLE FOR DATE/TIME WIDGET*/
 
-/*ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC)
+
+/*ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC) - FILTER AS BELOW, OR REORDER WITH TERNARY LINKED TO BUTTON? - SEE main.js line 19
 .dateFilter {
     overflow:hidden;
 }

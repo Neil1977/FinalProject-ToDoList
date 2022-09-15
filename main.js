@@ -38,7 +38,6 @@ window.addEventListener('load', () => {
     DisplayTodos();
 })
 
-        //WANT TO USE  CODE BLOCK TO ADD DATE/TIME TO APP SCREEN WITHIN HEADER:
         const timeElement = document.querySelector(".time");
         const dateElement = document.querySelector(".date");
 
@@ -63,9 +62,9 @@ window.addEventListener('load', () => {
             timeElement.textContent = formatTime(now);
             dateElement.textContent = formatDate(now);
         }, 200);
-        //WANT TO USE  CODE BLOCK TO ADD DATE TO APP SCREEN WITHIN HEADER:
-
         
+
+
 /*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
 function DisplayTodos() {
     const todoList = document.querySelector('#todo-list');
@@ -76,7 +75,7 @@ function DisplayTodos() {
         .forEach(todo => {
             const todoItem = document.createElement('div');
             todoItem.classList.add('todo-item')
-            //Add button to resort entries into ascending/descending too if needed?
+            //Add button to resort entries into ascending/descending too if needed? see main.js line 19 and index.html line 29
             const label = document.createElement('label');
             const input = document.createElement('input');
             const span = document.createElement('span');
