@@ -22,8 +22,7 @@ header {
     width: 100vw;
 }
 
-/*ADDING STYLE FOR DATE/TIME WIDGET*/
-
+/*ADDING STYLE FOR DATE/TIME WIDGET
 .datetime {
     font-size: 16px;
     padding: 24px;
@@ -36,19 +35,19 @@ header {
     font-weight:400;
     font-family:'montserrat', sans-serif;
 }
-/*ADDING STYLE FOR DATE/TIME WIDGET*/
+ADDING STYLE FOR DATE/TIME WIDGET
 
 .time {
     font-size: 3em;
     color: #313154;
     }
-/*ADDING STYLE FOR DATE/TIME WIDGET*/
+/*ADDING STYLE FOR DATE/TIME WIDGET
 
 .date {
     margin-top: 12px;
     font-size: 1.75em;
 }
-/*ADDING STYLE FOR DATE/TIME WIDGET*/
+ADDING STYLE FOR DATE/TIME WIDGET*/
 
 .bg-img {
     background-repeat: repeat-x;

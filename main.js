@@ -15,7 +15,6 @@ window.addEventListener('load', () => {
         e.preventDefault();
 
         //WANT TO USE  CODE BLOCK TO ADD DATE TO APP SCREEN:
-
         //const timeElement = document.querySelector(".time");
         //const dateElement = document.querySelector(".date");
 
