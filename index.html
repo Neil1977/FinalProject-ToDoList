@@ -26,13 +26,6 @@
         <div class="header-image2 bg-img">
         </div>
 
-        <!--ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC) - FILTER  OR REORDER WITH TERNARY LINKED TO BUTTON? - SEE main.js ln19 and main.css ln42 also.
-        <div id="dateFilter">
-            <button class="dateToggle" onclick="filterSelection('date')">Date Order</button>
-            <div class="filterDiv date time">
-            </div>
-        ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC)-->
-
     </header>
     <main class="app">
 
@@ -75,6 +68,13 @@
 
         <section class="todo-list">
             <h3>TODO LIST</h3>
+            <!--!TOGGLE BUTTON HERE-->
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+              <!--!TOGGLE BUTTON HERE-->
+              <h5>Toggle Date/Time Order</h5>
             <div class="list" id="todo-list">
 
             </div>

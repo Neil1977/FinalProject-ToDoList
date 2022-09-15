@@ -16,8 +16,7 @@ window.addEventListener('load', () => {
 
 
 
-        //ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC) - see also index.html ln29 and main.css ln42
-        //function ????? - TBC (ternary reversal of this linked to buton? - todos.sort((a, b) => b.createdAt - a.createdAt)??
+        //ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC)//
 
         const todo = {
             content: e.target.elements.content.value,
@@ -66,16 +65,16 @@ setInterval(() => {
 
 
 /*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
-function DisplayTodos() {
+function DisplayTodos(isAscending = false) {
     const todoList = document.querySelector('#todo-list');
 
     todoList.innerHTML = '';
-
-    todos.sort((a, b) => b.createdAt - a.createdAt)
+    const sortOrder =(isAscending) ?  (a, b) => b.createdAt - a.createdAt: (a, b) => a.createdAt - b.createdAt
+    
+    todos.sort(sortOrder)
         .forEach(todo => {
             const todoItem = document.createElement('div');
             todoItem.classList.add('todo-item')
-            //Add button to resort entries into ascending/descending too if needed? see main.js line 19 and index.html line 29
             const label = document.createElement('label');
             const input = document.createElement('input');
             const span = document.createElement('span');
