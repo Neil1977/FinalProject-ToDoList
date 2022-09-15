@@ -66,7 +66,24 @@ function DisplayTodos(isAscending = true) {
 
     todoList.innerHTML = '';
     const sortOrder = (isAscending) ? (a, b) => b.createdAt - a.createdAt : (a, b) => a.createdAt - b.createdAt
-    /*LOGIC HERE FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NO*/
+
+    /*LOGIC BELOW FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW
+
+    document.addEventListener('DOMContentLoaded', sortOrder (isAscending) {
+
+    document.querySelector('input[type="checkbox"]');
+
+    checkbox.addEventListener('change', sortOrder (isAscending) {
+    if (checkbox.checked) {
+      (a, b) => b.createdAt - a.createdAt
+      } else {
+        (a, b) => a.createdAt - b.createdAt
+      }
+  });
+});
+LOGIC ABOVE FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW*/
+
+
 
     todos.sort(sortOrder)
         .forEach(todo => {
