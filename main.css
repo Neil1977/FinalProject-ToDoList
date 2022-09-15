@@ -317,7 +317,7 @@ input:checked~.bubble::after {
     flex: 1 1 0%;
 }
 
-/*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
+/*Display more of todo in visible list (without having to use "edit" button and cursor across - DISPLAY DATE/TIME STAMP ALSO)*/
 .todo-item .todo-content input {
     color: var(--dark);
     font-size: 1.125rem;
