@@ -67,10 +67,8 @@ function DisplayTodos(isAscending = true) {
     todoList.innerHTML = '';
     const sortOrder = (isAscending) ? (a, b) => b.createdAt - a.createdAt : (a, b) => a.createdAt - b.createdAt
 
-    /*LOGIC BELOW FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW
-
+    /*PSEUDO LOGIC BELOW FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW
     document.addEventListener('DOMContentLoaded', sortOrder (isAscending) {
-
     document.querySelector('input[type="checkbox"]');
 
     checkbox.addEventListener('change', sortOrder (isAscending) {
@@ -81,7 +79,16 @@ function DisplayTodos(isAscending = true) {
       }
   });
 });
-LOGIC ABOVE FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW*/
+
+OR SOMETHING LIKE...???
+
+var input = document.getElementById("switch");
+input.addEventListener("switch", sortOrder(isAscending) {
+  if (event.key === true) {
+    document.getElementById("switch").click();
+  }
+});
+PSEUDO LOGIC ABOVE FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW*/
 
 
 
