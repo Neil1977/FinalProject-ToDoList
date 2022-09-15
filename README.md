@@ -21,6 +21,7 @@ The Dream:
  - Direct technology issues reporting/resolution route also as above. - TOO COMPLEX TO ACHIEVE
  
  
+ 
  Potential barriers:
 
 - Timescales – DISCUSSED SEE ABOVE
@@ -39,21 +40,27 @@ MVP:
 
  - Todo App  – CONFIRMED AS REALISTIC TO WORK ON FOR PROJECT USING JS/CSS/HTML (SEE CODING ABILITY ABOVE) - BASE APP CREATED, NOW BRANCHED TO FEATURE TO CONTINUE BELOW
 
-- Add date/time to front of App - Stretch target - COMPLETED
+ 
+ 
+STRETCH TARGETS POST MVP:
+ 
+- Restyle/Add Header and Footer - COMPLETED
+
+ - Make header stay in place while scrolling down list (footer to stay static) - COMPLETED
+
+- Add live date/time to front of App - COMPLETED
 
  - Sort all entries into time/date order - COMPLETED
+ 
+ - Mobile compatible? (media query) - COMPLETED/NOT NEEDED DUE TO LAYOUT SCALING FINE ANYWAY
 
  - Add audio alert based on date/time (linked to time 20:00 inday) - Stretch Target - STILL TO COMPLETE - CODE COMMENTED IN FEATURE BRANCH ONLY
  
- - Add button to resort entries into ascending/descending - STRETCH TARGET - STILL TO COMPLETE - COMMENTS AND POSSIBLE CODE ONLY CURRENTLY
- 
- - Make header stay in place while scrolling down list (footer to stay static) - COMPLETED
+ - Add button to resort entries into ascending/descending -  STILL TO COMPLETE - COMMENTS AND POSSIBLE CODE ONLY CURRENTLY
  
  - Display more of todo in visible list (without having to use "edit" button and cursor across - Also display date & time stamp to automatically linked to time at top and to trigger alert @ 20:00 - SEE ABOVE) - STRETCH TARGET - STILL TO COMPLETE
  
- - Mobile compatible? (media query) - STRETCH TARGET - COMPLETED/NOT NEEDED DUE TO LAYOUT SCALING FINE ANYWAY
- 
- - Publish/Present
+- Publish/Present
  
  
 
@@ -68,4 +75,6 @@ Information sources:
 - Online research – N/A
 
 - YouTube To-Do App tutorial for basic framework – (SEE CODING ABILITY ABOVE)
+
+- Direct Coach Support
 
