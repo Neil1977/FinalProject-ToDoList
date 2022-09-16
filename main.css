@@ -314,13 +314,17 @@ input:checked~.bubble::after {
 }
 
 .todo-item .todo-content {
-    flex: 1 1 0%;
+    flex: 1 1 auto;
 }
 
-/*Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date).*/
+
 .todo-item .todo-content input {
     color: var(--dark);
     font-size: 1.125rem;
+}
+/* Added this to set width of the input field.  This was causing the problems. THANKYOU NOW I WANT TIME STAMP IN(BUT NOT DATE) */
+.todo-item .input-text {
+    width: 100%;
 }
 
 .todo-item .actions {

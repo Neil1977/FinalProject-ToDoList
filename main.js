@@ -95,8 +95,8 @@ function DisplayTodos(isAscending = false) {
             actions.classList.add('actions');
             edit.classList.add('edit');
             deleteButton.classList.add('delete');
-
-            content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
+            //This is the input
+            content.innerHTML = `<input type="text" class="input-text" value="${todo.content}" readonly>`;
             edit.innerHTML = 'Edit';
             deleteButton.innerHTML = 'Delete';
 
