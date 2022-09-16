@@ -61,29 +61,15 @@ setInterval(() => {
 
 
 /*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
-function DisplayTodos(isAscending = true) {
+
+//PSEUDO LOGIC BELOW FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW
+
+const toggleDatetime = document.getElementById("toggleDatetime")
+toggleDatetime.addEventListener("change", (e) => DisplayTodos(e.target.checked));
+function DisplayTodos(isAscending = false) {
     const todoList = document.querySelector('#todo-list');
     todoList.innerHTML = '';
-    const sortOrder = (isAscending) ? (a, b) => b.createdAt - a.createdAt : (a, b) => a.createdAt - b.createdAt
-
-    /*PSEUDO LOGIC BELOW FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW
-    //function DisplaytoDos(e){
-    //onChange=(e)=>displayToDo(e.target.value)
-    //return (
-    //<input name="checkbox" onChange={isAscending} />
-    //);
-//}
-
-
-/*JORDANS ADVICE:
-Sliders are check-boxes so they have boolean logic so you just need a listener on it.
-then you already have a function for your to-do list that takes a boolean
-instead of sortOrder you can use the function you already have.
-just need to put it inside of an anonymous function so that it doesn't get called immediately.  This will also allow you to pass a value.
-onChange=(event)=>displayToDo(event.target.value)
-PSEUDO LOGIC ABOVE FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW*/
-
-
+    const sortOrder = (isAscending) ? (a, b) => b.createdAt - a.createdAt : (a, b) => a.createdAt - b.createdAt;
 
     todos.sort(sortOrder)
         .forEach(todo => {
@@ -136,6 +122,8 @@ PSEUDO LOGIC ABOVE FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW*/
             //setTimeout(function(){(new Audio(mp3_url)).play()}, i * 1000)
             //}
 
+
+
             input.addEventListener('click', e => {
                 todo.done = e.target.checked;
                 localStorage.setItem('todos', JSON.stringify(todos));
@@ -167,7 +155,9 @@ PSEUDO LOGIC ABOVE FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW*/
                 DisplayTodos();
             })
         })
-    }
+}
+
+
 
 
 
