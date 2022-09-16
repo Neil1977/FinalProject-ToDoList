@@ -194,8 +194,9 @@ h5 {
     font-weight: 700;
 }
 
-/*Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date).*/
+/*Display time added (not date).*/
 .create-todo input[type="text"] {
+    flex-direction: column;
     display: block;
     width: 100%;
     font-size: 1.125rem;
