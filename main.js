@@ -60,7 +60,8 @@ setInterval(() => {
 
 
 
-/*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
+/*Display more of todo in visible list (without having to use "edit" button and cursor across - SPAN. Also want to add time added (not date) to be visible too*/
+//TOGGLE NOW WORKS BUT REORDERS ENTRIES IN CHRONOLOGICAL BUT ALSO TO TOP/BOTTOM OF LIST AND IDEALLY JUST ORDER NOT LIST POSITION
 
 const toggleDatetime = document.getElementById("toggleDatetime")
 toggleDatetime.addEventListener("change", (e) => DisplayTodos(e.target.checked));
