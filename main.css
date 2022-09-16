@@ -194,7 +194,12 @@ h5 {
     font-weight: 700;
 }
 
-/*Display time added (not date).*/
+/*Display time added (not date!).*/
+
+/*.timestamp {
+    ???????
+}*/
+
 .create-todo input[type="text"] {
     flex-direction: column;
     display: block;
@@ -218,7 +223,6 @@ h5 {
 .create-todo .options label {
     display: flex;
     flex-direction: column;
-    /*flex-direction: row;*/
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
@@ -328,8 +332,9 @@ input:checked~.bubble::after {
     height: fit-content;
     width: 100%;
     overflow-wrap: break-word;
-    
+
 }
+
 .todo-item .actions {
     display: flex;
     align-items: center;

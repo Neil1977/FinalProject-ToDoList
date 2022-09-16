@@ -64,6 +64,7 @@ setInterval(() => {
 //you've got all of the logic already, you just need to recreate it for this feature
 //you can use javascript to get the date
 //you'll have to store it in your todo objects
+//ln39 - function formatTime(date) { returns time only........
 
 //TOGGLE NOW WORKS BUT REORDERS ENTRIES IN CHRONOLOGICAL BUT ALSO TO TOP/BOTTOM OF LIST AND IDEALLY JUST ORDER NOT LIST POSITION
 
@@ -99,8 +100,8 @@ function DisplayTodos(isAscending = false) {
             actions.classList.add('actions');
             edit.classList.add('edit');
             deleteButton.classList.add('delete');
-            //This is the input - changed it to a textarea, which can handle multiple lines. - STILL TO RESOVE - SEE README
-            content.innerHTML = `<div type="text" class="input-text"  contenteditable="false">
+            //This is the input - changed it to a textarea, which can handle multiple lines. - STILL TO RESOLVE - SEE README
+            content.innerHTML = `<div type="textarea" class="input-text"  contenteditable="false">
                                     ${todo.content}
                                     </div>`;
             edit.innerHTML = 'Edit';
