@@ -60,7 +60,11 @@ setInterval(() => {
 
 
 
-/*Want to add time added (not date) to be visible too once todo item generated*/
+/*Want to add time added (not date) to be visible once todo item generated*/
+//you've got all of the logic already, you just need to recreate it for this feature
+//you can use javascript to get the date
+//you'll have to store it in your todo objects
+
 //TOGGLE NOW WORKS BUT REORDERS ENTRIES IN CHRONOLOGICAL BUT ALSO TO TOP/BOTTOM OF LIST AND IDEALLY JUST ORDER NOT LIST POSITION
 
 const toggleDatetime = document.getElementById("toggleDatetime")
