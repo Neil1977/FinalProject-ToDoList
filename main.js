@@ -96,7 +96,7 @@ function DisplayTodos(isAscending = false) {
             edit.classList.add('edit');
             deleteButton.classList.add('delete');
 
-            content.innerHTML = ` <input type="text" value="${todo.content}" readonly>`;
+            content.innerHTML = `<input type="text" value="${todo.content}" readonly>`;
             edit.innerHTML = 'Edit';
             deleteButton.innerHTML = 'Delete';
 
@@ -114,7 +114,7 @@ function DisplayTodos(isAscending = false) {
                 todoItem.classList.add('done');
             }
 
-            //CODE SNIPET TO ADD ALERT SOUND IF TODO OVERDUE? (SEE READ ME ALSO - AFTER DATE/TIME ADDED - ALERT WHEN 20:00 REACHED ON DAY ADDED AND NOT TICKED MARKED AS "DONE"/CROSSED OUT ON FRONT END)
+            //CODE SNIPET TO ADD ALERT SOUND IF TODO OVERDUE? (SEE READ ME ALSO - AFTER TIME ADDED - ALERT WHEN 20:00 REACHED ON DAY ADDED AND NOT TICKED MARKED AS "DONE"/CROSSED OUT ON FRONT END)
             //var mp3_url = 'https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3';
             //(new Audio(mp3_url)).play()
             //for (i=0; i<10; i++) {

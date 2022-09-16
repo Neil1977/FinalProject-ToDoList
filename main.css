@@ -41,7 +41,6 @@ header {
 .switch {
     position: relative;
     display: inline-block;
-    
     width: 60px;
     height: 34px;
 }
@@ -130,8 +129,8 @@ footer {
 
 * {
     margin: 0;
-    /*padding: 0;
-    /*box-sizing: border-box;*/
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'montserrat', sans-serif;
 }
 
@@ -195,7 +194,7 @@ h5 {
     font-weight: 700;
 }
 
-/*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
+/*Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date).*/
 .create-todo input[type="text"] {
     display: block;
     width: 100%;
@@ -318,7 +317,7 @@ input:checked~.bubble::after {
     flex: 1 1 0%;
 }
 
-/*Display more of todo in visible list (without having to use "edit" button and cursor across - DISPLAY DATE/TIME STAMP ALSO)*/
+/*Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date).*/
 .todo-item .todo-content input {
     color: var(--dark);
     font-size: 1.125rem;
