@@ -63,7 +63,6 @@ setInterval(() => {
 /*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
 function DisplayTodos(isAscending = true) {
     const todoList = document.querySelector('#todo-list');
-
     todoList.innerHTML = '';
     const sortOrder = (isAscending) ? (a, b) => b.createdAt - a.createdAt : (a, b) => a.createdAt - b.createdAt
 
