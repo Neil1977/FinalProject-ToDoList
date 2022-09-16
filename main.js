@@ -67,26 +67,20 @@ function DisplayTodos(isAscending = true) {
     const sortOrder = (isAscending) ? (a, b) => b.createdAt - a.createdAt : (a, b) => a.createdAt - b.createdAt
 
     /*PSEUDO LOGIC BELOW FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW
-    document.addEventListener('DOMContentLoaded', sortOrder (isAscending) {
-    document.querySelector('input[type="checkbox"]');
+    //function DisplaytoDos(e){
+    //onChange=(e)=>displayToDo(e.target.value)
+    //return (
+    //<input name="checkbox" onChange={isAscending} />
+    //);
+//}
 
-    checkbox.addEventListener('change', sortOrder (isAscending) {
-    if (checkbox.checked) {
-      (a, b) => b.createdAt - a.createdAt
-      } else {
-        (a, b) => a.createdAt - b.createdAt
-      }
-  });
-});
 
-OR SOMETHING LIKE...???
-
-var input = document.getElementById("switch");
-input.addEventListener("switch", sortOrder(isAscending) {
-  if (event.key === true) {
-    document.getElementById("switch").click();
-  }
-});
+/*JORDANS ADVICE:
+Sliders are check-boxes so they have boolean logic so you just need a listener on it.
+then you already have a function for your to-do list that takes a boolean
+instead of sortOrder you can use the function you already have.
+just need to put it inside of an anonymous function so that it doesn't get called immediately.  This will also allow you to pass a value.
+onChange=(event)=>displayToDo(event.target.value)
 PSEUDO LOGIC ABOVE FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW*/
 
 
@@ -173,7 +167,7 @@ PSEUDO LOGIC ABOVE FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW*/
                 DisplayTodos();
             })
         })
-}
+    }
 
 
 
