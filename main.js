@@ -62,8 +62,6 @@ setInterval(() => {
 
 /*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
 
-//PSEUDO LOGIC BELOW FOR REVERSAL OF ORDER LINKED TO TOGGLE SWITCH NOW
-
 const toggleDatetime = document.getElementById("toggleDatetime")
 toggleDatetime.addEventListener("change", (e) => DisplayTodos(e.target.checked));
 function DisplayTodos(isAscending = false) {
