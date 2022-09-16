@@ -60,7 +60,7 @@ setInterval(() => {
 
 
 
-/*Display more of todo in visible list (without having to use "edit" button and cursor across - SPAN. Also want to add time added (not date) to be visible too*/
+/*Want to add time added (not date) to be visible too once todo item generated*/
 //TOGGLE NOW WORKS BUT REORDERS ENTRIES IN CHRONOLOGICAL BUT ALSO TO TOP/BOTTOM OF LIST AND IDEALLY JUST ORDER NOT LIST POSITION
 
 const toggleDatetime = document.getElementById("toggleDatetime")
@@ -95,8 +95,10 @@ function DisplayTodos(isAscending = false) {
             actions.classList.add('actions');
             edit.classList.add('edit');
             deleteButton.classList.add('delete');
-            //This is the input
-            content.innerHTML = `<input type="text" class="input-text" value="${todo.content}" readonly>`;
+            //This is the input - changed it to a textarea, which can handle multiple lines.
+            content.innerHTML = `<div type="text" class="input-text"  contenteditable="false">
+                                    ${todo.content}
+                                    </div>`;
             edit.innerHTML = 'Edit';
             deleteButton.innerHTML = 'Delete';
 
@@ -137,12 +139,12 @@ function DisplayTodos(isAscending = false) {
             })
 
             edit.addEventListener('click', e => {
-                const input = content.querySelector('input');
-                input.removeAttribute('readonly');
+                const input = content.querySelector('.input-text');
+                input.setAttribute('contenteditable', true);
                 input.focus();
                 input.addEventListener('blur', e => {
-                    input.setAttribute('readonly', true);
-                    todo.content = e.target.value;
+                    input.setAttribute('contenteditable', false);
+                    todo.content = input.innerText
                     localStorage.setItem('todos', JSON.stringify(todos));
                     DisplayTodos();
                 })

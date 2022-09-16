@@ -58,7 +58,7 @@ STRETCH TARGETS POST MVP:
  
  - Add button to resort entries into ascending/descending -  STILL TO COMPLETE - TOGGLE NOW WORKS BUT REORDERS ENTRIES IN CHRONOLOGICAL BUT ALSO TO TOP/BOTTOM OF LIST AND IDEALLY JUST ORDER NOT LIST POSITION
  
- - Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date). Time stamp linked to time at top and to trigger alert @ 20:00 - SEE ABOVE) - STRETCH TARGET - STILL TO COMPLETE
+ - Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date). Time stamp linked to time at top and to trigger alert @ 20:00 - SEE ABOVE) - STRETCH TARGET - STILL TO COMPLETE - amended to "textarea" on input, but seems incompatible with EDGE (still seeking solution)
  
 - Publish/Present
  

@@ -217,6 +217,7 @@ h5 {
 .create-todo .options label {
     display: flex;
     flex-direction: column;
+    /*flex-direction: row;*/
     align-items: center;
     justify-content: center;
     padding: 1.5rem;
@@ -315,18 +316,19 @@ input:checked~.bubble::after {
 
 .todo-item .todo-content {
     flex: 1 1 auto;
+    height: fit-content;
 }
 
 
-.todo-item .todo-content input {
+.todo-item .todo-content .input-text {
     color: var(--dark);
     font-size: 1.125rem;
-}
-/* Added this to set width of the input field.  This was causing the problems. THANKYOU NOW I WANT TIME STAMP IN(BUT NOT DATE) */
-.todo-item .input-text {
+    border: none;
+    height: fit-content;
     width: 100%;
+    overflow-wrap: break-word;
+    
 }
-
 .todo-item .actions {
     display: flex;
     align-items: center;
@@ -354,7 +356,7 @@ input:checked~.bubble::after {
     background-color: var(--danger);
 }
 
-.todo-item.done .todo-content input {
+.todo-item.done .todo-content .input-text {
     text-decoration: line-through;
     color: var(--grey);
 }
