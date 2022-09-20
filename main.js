@@ -96,7 +96,7 @@ function DisplayTodos(isAscending = false) {
             actions.classList.add('actions');
             edit.classList.add('edit');
             deleteButton.classList.add('delete');
-            //This is the input - changed it to a textarea, which can handle multiple lines. - STILL TO RESOLVE - SEE README
+            //This is the input - changed it to a textarea, which can handle multiple lines. - STILL TO RESOLVE - SEE README - EDGE BUG
             content.innerHTML = `<div type="textarea" class="input-text"  contenteditable="false">
                                     ${todo.content}
                                     ${todo.timeCreated}
