@@ -46,7 +46,7 @@ MVP:
 
  Google Chrome Browser preferred (See EDGE bug below in stretch targets - Does run but with visual issue)
 
- Live Server - MORE INFO HERE (right click HTML file and open in live server if extension in place) npx live-server .
+ Live Server - (right click HTML file and open in live server if extension in place) npx live-server .
 
  Local Storage
 
