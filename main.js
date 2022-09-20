@@ -120,7 +120,7 @@ function DisplayTodos(isAscending = false) {
             //ADDITIONAL STRETCH - ADD ESTIMATED COMPLETION TIME ON INPUT SO ALERT BELOW DOESNT GENERICALLY TRIGGER @ 20:00
             const date = new Date();
             const time = date.getHours();
-            if (time >= 20) {
+            if (time >= 18) {
                 isOverdue()
             }
             function isOverdue() {
