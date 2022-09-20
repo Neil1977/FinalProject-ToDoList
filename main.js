@@ -131,8 +131,6 @@ function DisplayTodos(isAscending = false) {
                 }
             }
 
-
-
             input.addEventListener('click', e => {
                 todo.done = e.target.checked;
                 localStorage.setItem('todos', JSON.stringify(todos));
