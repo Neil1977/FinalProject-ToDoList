@@ -64,6 +64,9 @@ setInterval(() => {
 //you've got all of the logic already, you just need to recreate it for this feature
 //you can use javascript to get the date
 //you'll have to store it in your todo objects
+//timestamp will be set when you click
+//so when you create a new todo, you can stamp it at the same time
+//just have to add a new key to your object.
 //ln39 - function formatTime(date) { returns time only........
 
 //TOGGLE NOW WORKS BUT REORDERS ENTRIES IN CHRONOLOGICAL BUT ALSO TO TOP/BOTTOM OF LIST AND IDEALLY JUST ORDER NOT LIST POSITION
