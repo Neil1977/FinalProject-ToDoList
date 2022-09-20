@@ -55,9 +55,9 @@ STRETCH TARGETS POST MVP:
  - Mobile compatible? (media query) - COMPLETED/NOT NEEDED DUE TO LAYOUT SCALING FINE ANYWAY
 
  - Add audio alert based on date/time (linked to time 20:00 inday) - Stretch Target - COMPLETED 
-  **ADDITIONAL STRETCH - ADD ESTIMATED COMPLETION TIME ON INPUT SO ALERT ABOVE DOESNT GENERICALLY TRIGGER @ 20:00**
+  ADDITIONAL STRETCH - ADD ESTIMATED COMPLETION TIME ON INPUT SO ALERT ABOVE DOESNT GENERICALLY TRIGGER @ 20:00?
  
- - Add button to resort entries into ascending/descending -  STILL TO COMPLETE - COMPLETED
+ - Add button to resort entries into ascending/descending - COMPLETED
  
  - Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date).  - STRETCH TARGET - COMPLETED BUT EDGE BUG NOT RESOLVED
  
