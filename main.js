@@ -117,7 +117,7 @@ function DisplayTodos(isAscending = false) {
                 todoItem.classList.add('done');
             }
 
-            //CODE SNIPET TO ADD ALERT SOUND IF TODO OVERDUE? (SEE READ ME ALSO - AFTER TIME ADDED - ALERT WHEN 20:00 REACHED ON DAY ADDED AND NOT TICKED MARKED AS "DONE"/CROSSED OUT ON FRONT END)
+            //ADDITIONAL STRETCH - ADD ESTIMATED COMPLETION TIME ON INPUT SO ALERT BELOW DOESNT GENERICALLY TRIGGER @ 20:00
             const date = new Date();
             const time = date.getHours();
             if(time >= 20){
@@ -129,7 +129,7 @@ function DisplayTodos(isAscending = false) {
             for (i=0; i<10; i++) {
             setTimeout(function(){(new Audio(mp3_url)).play()}, i * 1000)
             }
-        }   //CODE SNIPET TO ADD ALERT SOUND IF TODO OVERDUE? (SEE READ ME ALSO - AFTER TIME ADDED - ALERT WHEN 20:00 REACHED ON DAY ADDED AND NOT TICKED MARKED AS "DONE"/CROSSED OUT ON FRONT END)
+        }   
             
             
 
