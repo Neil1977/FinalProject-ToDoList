@@ -112,7 +112,7 @@ function DisplayTodos(isAscending = false) {
             todoItem.appendChild(actions);
 
             todoList.appendChild(todoItem);
-            
+
             if (todo.done) {
                 todoItem.classList.add('done');
             }
@@ -120,18 +120,18 @@ function DisplayTodos(isAscending = false) {
             //ADDITIONAL STRETCH - ADD ESTIMATED COMPLETION TIME ON INPUT SO ALERT BELOW DOESNT GENERICALLY TRIGGER @ 20:00
             const date = new Date();
             const time = date.getHours();
-            if(time >= 20){
-            isOverdue()
+            if (time >= 20) {
+                isOverdue()
             }
-            function isOverdue () {
+            function isOverdue() {
                 var mp3_url = 'https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3';
-            (new Audio(mp3_url)).play()
-            for (i=0; i<10; i++) {
-            setTimeout(function(){(new Audio(mp3_url)).play()}, i * 1000)
+                (new Audio(mp3_url)).play()
+                for (i = 0; i < 10; i++) {
+                    setTimeout(function () { (new Audio(mp3_url)).play() }, i * 1000)
+                }
             }
-        }   
-            
-            
+
+
 
             input.addEventListener('click', e => {
                 todo.done = e.target.checked;
