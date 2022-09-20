@@ -119,8 +119,8 @@ function DisplayTodos(isAscending = false) {
             }
 
             //CODE SNIPET TO ADD ALERT SOUND IF TODO OVERDUE? (SEE READ ME ALSO - AFTER TIME ADDED - ALERT WHEN 20:00 REACHED ON DAY ADDED AND NOT TICKED MARKED AS "DONE"/CROSSED OUT ON FRONT END)
-            //function isOverdue(item) {
-            //return !item.complete && item.timestampDue < new Date().getTime();
+            //function isOverdue(todoItem) {
+            //return !todo.done && item.timeCreated < new Date().getTime();
             //}
             //var mp3_url = 'https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3';
             //(new Audio(mp3_url)).play()
