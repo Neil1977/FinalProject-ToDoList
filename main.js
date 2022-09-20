@@ -19,11 +19,10 @@ window.addEventListener('load', () => {
             category: e.target.elements.category.value,
             done: false,
             createdAt: new Date().getTime(),
-            timeCreated: new Date().toLocaleTimeString("en-GB",{timeZone: 'Europe/London'}),
+            timeCreated: new Date().toLocaleTimeString("en-GB", { timeZone: 'Europe/London' }),
         }
 
         todos.push(todo);
-
         localStorage.setItem('todos', JSON.stringify(todos));
 
         e.target.reset();
@@ -113,22 +112,26 @@ function DisplayTodos(isAscending = false) {
             todoItem.appendChild(actions);
 
             todoList.appendChild(todoItem);
-
+            
             if (todo.done) {
                 todoItem.classList.add('done');
             }
 
             //CODE SNIPET TO ADD ALERT SOUND IF TODO OVERDUE? (SEE READ ME ALSO - AFTER TIME ADDED - ALERT WHEN 20:00 REACHED ON DAY ADDED AND NOT TICKED MARKED AS "DONE"/CROSSED OUT ON FRONT END)
-            //function isOverdue(todoItem) {
-            //return !todo.done && item.timeCreated < new Date().getTime();
-            //}
-            //var mp3_url = 'https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3';
-            //(new Audio(mp3_url)).play()
-            //for (i=0; i<10; i++) {
-            //setTimeout(function(){(new Audio(mp3_url)).play()}, i * 1000)
-            //}
-
-
+            const date = new Date();
+            const time = date.getHours();
+            if(time >= 20){
+            isOverdue()
+            }
+            function isOverdue () {
+                var mp3_url = 'https://media.geeksforgeeks.org/wp-content/uploads/20190531135120/beep.mp3';
+            (new Audio(mp3_url)).play()
+            for (i=0; i<10; i++) {
+            setTimeout(function(){(new Audio(mp3_url)).play()}, i * 1000)
+            }
+        }   //CODE SNIPET TO ADD ALERT SOUND IF TODO OVERDUE? (SEE READ ME ALSO - AFTER TIME ADDED - ALERT WHEN 20:00 REACHED ON DAY ADDED AND NOT TICKED MARKED AS "DONE"/CROSSED OUT ON FRONT END)
+            
+            
 
             input.addEventListener('click', e => {
                 todo.done = e.target.checked;
