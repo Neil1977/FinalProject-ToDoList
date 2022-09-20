@@ -69,6 +69,16 @@ setInterval(() => {
 //just have to add a new key to your object.
 //ln39 - function formatTime(date) { returns time only........
 
+//A BIT LIKE THIS???
+//function NewItem({ add, cancel }) {
+    //const [name, setName] = React.useState("");
+    //const [date, setDate] = React.useState(dateformat(new Date(), "yyyy-mm-dd"));
+  
+    //function addItem() {
+      //const dueDate = new Date(date);
+      //add({ name, timestampDue: dueDate.getTime(), complete: false, id: 0 });
+    //}
+
 //TOGGLE NOW WORKS BUT REORDERS ENTRIES IN CHRONOLOGICAL BUT ALSO TO TOP/BOTTOM OF LIST AND IDEALLY JUST ORDER NOT LIST POSITION
 
 const toggleDatetime = document.getElementById("toggleDatetime")
