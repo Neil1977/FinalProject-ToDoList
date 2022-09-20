@@ -2,42 +2,43 @@
 <html lang="en">
 
 <head>
+    <!--THE SECTION BELOW HANDLES IMPORTS, LINKS CSS AND IMPORTS CUSTOM FONTS-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo List for Time Management</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-
     <link rel="stylesheet" href="main.css" />
     <script src="js/main.js" defer></script>
-
-
 </head>
 
 <body>
+    <!--ADDED DIV CLASS FOR MULTIVERSE/DL HEADERS-->
     <header>
         <div class="header-image bg-img">
         </div>
         <div class="header-image2 bg-img">
         </div>
-
     </header>
+
     <main class="app">
 
+        <!--SECTION BELOW CREATES INPUT FIELD FOR DATE & TIME/PLACEHOLDER-->
         <div class="time"></div>
         <div class="date"></div>
 
+        <!--SECTION BELOW CREATES INPUT FIELD FOR GREETING/PLACEHOLDER-->
         <section class="greeting">
             <h2 class="title">
                 Hello, <input type="text" id="name" placeholder="Name here">
             </h2>
         </section>
 
+        <!--SECTION BELOW CREATES INPUT FIELD FOR MAKING A TODO ITEM/PLACEHOLDER-->
         <section class="create-todo">
             <h3>CREATE A TODO</h3>
 
@@ -45,29 +46,29 @@
                 <h4>What's on your todo list?</h4>
                 <input type="text" name="content" id="content" placeholder="e.g. make a video" />
 
+                <!--SECTION BELOW CREATES INPUT FIELD FOR MAKING A TODO ITEM EITHER AS BUSINESS OR PERSONAL WITH RADIO BUTTON-->
                 <h4>Pick a category</h4>
                 <div class="options">
 
                     <label>
                         <input type="radio" name="category" id="category1" value="business" />
                         <span class="bubble business"></span>
-
                         <div>Business</div>
                     </label>
 
                     <label>
                         <input type="radio" name="category" id="category2" value="personal" />
                         <span class="bubble personal"></span>
-
                         <div>Personal</div>
                     </label>
-
                 </div>
 
+                <!--SECTION BELOW ADDS ABILITY TO ADD TO TODO LIST/LOCAL STORAGE PLUS BUTTON-->
                 <input type="submit" value="Add todo" />
             </form>
         </section>
 
+        <!--SECTION BELOW ADDS ABILITY TO ADD TO TODO LIST/LOCAL STORAGE PLUS BUTTONS (INCL SLIDER TO TOGGLE ENTRIES)-->
         <section class="todo-list">
             <h3>TODO LIST</h3>
 
@@ -79,9 +80,7 @@
 
             </label>
 
-
             <div class="list" id="todo-list">
-
             </div>
         </section>
 
@@ -90,6 +89,7 @@
 </body>
 
 <footer>
+    <!--ADDED DIV CLASS FOR MULTIVERSE FOOTER-->
     <div class="footer-image bg-img">
     </div>
 </footer>
