@@ -62,7 +62,7 @@ setInterval(() => {
 
 
 
-//TOGGLE NOW WORKS BUT REORDERS ENTRIES IN CHRONOLOGICAL BUT ALSO TO TOP/BOTTOM OF LIST AND IDEALLY JUST ORDER NOT LIST POSITION
+
 
 const toggleDatetime = document.getElementById("toggleDatetime")
 toggleDatetime.addEventListener("change", (e) => DisplayTodos(e.target.checked));

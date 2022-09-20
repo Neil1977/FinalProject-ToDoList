@@ -56,9 +56,9 @@ STRETCH TARGETS POST MVP:
 
  - Add audio alert based on date/time (linked to time 20:00 inday) - Stretch Target - STILL TO COMPLETE - CODE COMMENTED IN FEATURE BRANCH ONLY
  
- - Add button to resort entries into ascending/descending -  STILL TO COMPLETE - TOGGLE NOW WORKS BUT REORDERS ENTRIES IN CHRONOLOGICAL BUT ALSO TO TOP/BOTTOM OF LIST AND IDEALLY JUST ORDER NOT LIST POSITION
+ - Add button to resort entries into ascending/descending -  STILL TO COMPLETE - COMPLETED
  
- - Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date). Time stamp linked to time at top and to trigger alert @ 20:00 - SEE ABOVE) - STRETCH TARGET - STILL TO COMPLETE - amended to "textarea" on input, but seems incompatible with EDGE (still seeking solution)
+ - Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date).  - STRETCH TARGET - COMPLETED
  
 - Publish/Present
  
@@ -77,4 +77,3 @@ Information sources:
 - YouTube To-Do App tutorial for basic framework – (SEE CODING ABILITY ABOVE)
 
 - Direct Coach Support
-
