@@ -18,7 +18,8 @@ window.addEventListener('load', () => {
             content: e.target.elements.content.value,
             category: e.target.elements.category.value,
             done: false,
-            createdAt: new Date().getTime()
+            createdAt: new Date().getTime(),
+            timeCreated: new Date().toLocaleTimeString("en-GB",{timeZone: 'Europe/London'}),
         }
 
         todos.push(todo);
@@ -60,63 +61,6 @@ setInterval(() => {
 
 
 
-/*Want to add time added (not date) to be visible once todo item generated*/
-//you've got all of the logic already, you just need to recreate it for this feature
-//you can use javascript to get the date
-//you'll have to store it in your todo objects
-//timestamp will be set when you click
-//so when you create a new todo, you can stamp it at the same time
-//just have to add a new key to your object.
-//ln39 - function formatTime(date) { returns time only........
-
-//A BIT LIKE THIS???
-/*function NewItem({ add, cancel }) {
-    const [name, setName] = React.useState("");
-    const [date, setDate] = React.useState(dateformat(new Date(), "yyyy-mm-dd"));
-  
-    function addItem() {
-      const dueDate = new Date(date);
-      add({ name, timestampDue: dueDate.getTime(), complete: false, id: 0 });
-    }
-  
-    return (
-      <div className="add-item-form">
-        <div className="form-group">
-          <label htmlFor="addItemInput">Item description</label>
-          <input
-            type="text"
-            placeholder="Enter description..."
-            className="form-control"
-            id="addItemInput"
-            value={name}
-            onChange={e => setName(e.target.value)}
-          />
-        </div>
-        <div className="form-group">
-          <label htmlFor="addItemDueInput">Due date</label>
-          <input
-            type="date"
-            className="form-control"
-            id="addItemDueInput"
-            onChange={e => setDate(e.target.value)}
-            value={date}
-          />
-        </div>
-        <button className="btn btn-success" disabled={name === ""} onClick={addItem}>
-          Add item
-        </button>
-        <button className="btn btn-secondary" style={{ marginLeft: "20px" }} onClick={cancel}>
-          Cancel
-        </button>
-      </div>);
-  }
-  const [adding, setAdding] = React.useState(false);
-  {!adding && (
-  <button type="button" className="btn btn-link" onClick={() => setAdding(true)}>
-    Add new item
-  </button>)}
-  {adding && <NewItem cancel={() => setAdding(false)} add={addNewItem} />}
-  */
 
 //TOGGLE NOW WORKS BUT REORDERS ENTRIES IN CHRONOLOGICAL BUT ALSO TO TOP/BOTTOM OF LIST AND IDEALLY JUST ORDER NOT LIST POSITION
 
@@ -155,6 +99,7 @@ function DisplayTodos(isAscending = false) {
             //This is the input - changed it to a textarea, which can handle multiple lines. - STILL TO RESOLVE - SEE README
             content.innerHTML = `<div type="textarea" class="input-text"  contenteditable="false">
                                     ${todo.content}
+                                    ${todo.timeCreated}
                                     </div>`;
             edit.innerHTML = 'Edit';
             deleteButton.innerHTML = 'Delete';

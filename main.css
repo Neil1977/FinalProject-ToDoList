@@ -194,12 +194,6 @@ h5 {
     font-weight: 700;
 }
 
-/*Display time added (not date!).*/
-
-/*.timestamp {
-    ???????
-}*/
-
 .create-todo input[type="text"] {
     flex-direction: column;
     display: block;
