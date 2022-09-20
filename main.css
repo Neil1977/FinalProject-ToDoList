@@ -1,3 +1,4 @@
+/*SETTING GENERAL CSS VARIABLES BELOW - REUSABLE*/
 :root {
     --primary: #EA40A4;
     --business: #3a82ee;
@@ -6,11 +7,25 @@
     --grey: #888;
     --dark: #313154;
     --danger: #ff5b57;
-
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-
     --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
     --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat', sans-serif;
+}
+
+input:not([type="radio"]):not([type="checkbox"]),
+button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: initial;
 }
 
 header {
@@ -127,27 +142,13 @@ footer {
     height: 100%;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'montserrat', sans-serif;
-}
 
-input:not([type="radio"]):not([type="checkbox"]),
-button {
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-    cursor: initial;
-}
 
+/*SETTING BODY AND SECTION STYLES BELOW*/
 body {
     background: var(--light);
     color: var(--dark);
 }
-
 
 section {
     margin-top: 2rem;
@@ -194,6 +195,7 @@ h5 {
     font-weight: 700;
 }
 
+/*SETTING STYLING FOR BUSINESS/PERSONAL RADIO BUTTONS BELOW*/
 .create-todo input[type="text"] {
     flex-direction: column;
     display: block;
@@ -226,6 +228,7 @@ h5 {
     cursor: pointer;
 }
 
+/*TICKBOXES FOR TODOLIST ITEMS ADDED BELOW BUT AS NON VISIBLE TO THEN RESTYLE*/
 input[type="radio"],
 input[type="checkbox"] {
     display: none;
@@ -247,6 +250,7 @@ input[type="checkbox"] {
     box-shadow: var(--personal-glow);
 }
 
+/*ADDED TRANSITION/ANIMATION AFTER SELECTED BELOW*/
 .bubble::after {
     content: "";
     display: block;
@@ -270,6 +274,7 @@ input:checked~.bubble::after {
     opacity: 1;
 }
 
+/*RESPACING AND STYLING INPUT BLOCK/BUTTONS BELOW*/
 .create-todo .options label div {
     color: var(--dark);
     font-size: 1.125rem;
@@ -289,10 +294,12 @@ input:checked~.bubble::after {
     transition: 0.2s ease-in-out;
 }
 
+/*ADDS EFFECT WHEN HOVERING MOUSE OVER ADD ITEM BAR*/
 .create-todo input[type="submit"]:hover {
     opacity: 0.75;
 }
 
+/*STYLING FOR TODO ITEMS ONCE ADDED*/
 .todo-list .list {
     margin: 1rem 0;
 }
@@ -347,6 +354,7 @@ input:checked~.bubble::after {
     opacity: 0.75;
 }
 
+/*STYLING FOR TODO ITEMS EDIT/DELETE ETC BELOW*/
 .todo-item .actions .edit {
     margin-right: 0.5rem;
     background-color: var(--primary);
@@ -356,6 +364,7 @@ input:checked~.bubble::after {
     background-color: var(--danger);
 }
 
+/*PUTS LINE THROUGH ITEM WHEN COMPLETED*/
 .todo-item.done .todo-content .input-text {
     text-decoration: line-through;
     color: var(--grey);
