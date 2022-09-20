@@ -1,13 +1,3 @@
-/*TRYING TO FIX EDGE BUG - SEE README ALSO
-@supports (-ms-ime-align:auto) {           
-    Input Microsoft Edge Styling        
-   } 
-
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {            
-    /* Input IE10+ Styling        
-    } 
-    */ 
-
 :root {
     --primary: #EA40A4;
     --business: #3a82ee;
