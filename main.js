@@ -117,7 +117,7 @@ function DisplayTodos(isAscending = false) {
                 todoItem.classList.add('done');
             }
 
-            //ADDITIONAL STRETCH - ADD ESTIMATED COMPLETION TIME ON INPUT SO ALERT BELOW DOESNT GENERICALLY TRIGGER @ 20:00
+            //ADDITIONAL STRETCH - ADD ESTIMATED COMPLETION TIME ON INPUT SO ALERT BELOW DOESNT GENERICALLY TRIGGER @ 20:00?
             const date = new Date();
             const time = date.getHours();
             if (time >= 18) {
