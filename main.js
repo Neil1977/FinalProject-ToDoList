@@ -64,10 +64,13 @@ setInterval(() => {
 const toggleDatetime = document.getElementById("toggleDatetime")
 toggleDatetime.addEventListener("change", (e) => DisplayTodos(e.target.checked));
 
-//Setting up function and all elements/labels and inputs to link to HTML/CSS
+//Setting up function and all elements/labels and inputs to link to HTML/CSS - Global variable
 function DisplayTodos(isAscending = false) {
     const todoList = document.querySelector('#todo-list');
     todoList.innerHTML = '';
+
+    //Added ability to sort items added into time order (linked to timestamp now displayed)
+    //Also added toggleswitch to reorder events if needed.
     const sortOrder = (isAscending) ? (a, b) => b.createdAt - a.createdAt : (a, b) => a.createdAt - b.createdAt;
     todos.sort(sortOrder)
         .forEach(todo => {
@@ -84,7 +87,7 @@ function DisplayTodos(isAscending = false) {
             input.checked = todo.done;
             span.classList.add('bubble');
 
-            //Seperating todos into business & Personal
+            //Seperating todos into business & Personal (span)
             if (todo.category == 'personal') {
                 span.classList.add('personal');
             } else {
@@ -114,11 +117,12 @@ function DisplayTodos(isAscending = false) {
             todoItem.appendChild(actions);
             todoList.appendChild(todoItem);
 
+            //Setting up functionality to mark todo as completed (see also comment below)
             if (todo.done) {
                 todoItem.classList.add('done');
             }
 
-            //ADDITIONAL STRETCH - ADDED ALERT LINKED TO TIMESTAMP TO SOUND ALERT IF 18:00 RECAHED AND TODO ITEM LEFT INCOMPLETED
+            //ADDED ALERT LINKED TO TIMESTAMP TO SOUND ALERT IF 18:00 RECAHED AND TODO ITEM LEFT INCOMPLETED
             const date = new Date();
             const time = date.getHours();
             if (time >= 18) {
@@ -132,6 +136,7 @@ function DisplayTodos(isAscending = false) {
                 }
             }
 
+            //Setting on click event listener for input and adding to local storage and redisplaying todos once done
             input.addEventListener('click', e => {
                 todo.done = e.target.checked;
                 localStorage.setItem('todos', JSON.stringify(todos));
@@ -145,6 +150,7 @@ function DisplayTodos(isAscending = false) {
                 DisplayTodos();
             })
 
+            //Setting on click event listener to add and when moving away from entry saves to local storage and makes editable
             edit.addEventListener('click', e => {
                 const input = content.querySelector('.input-text');
                 input.setAttribute('contenteditable', true);
@@ -157,6 +163,7 @@ function DisplayTodos(isAscending = false) {
                 })
             })
 
+            //Setting on click event listener to delete when completed (filter)
             deleteButton.addEventListener('click', e => {
                 todos = todos.filter(t => t != todo);
                 localStorage.setItem('todos', JSON.stringify(todos));
