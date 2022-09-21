@@ -40,8 +40,18 @@ MVP:
 
  - Todo App  – CONFIRMED AS REALISTIC TO WORK ON FOR PROJECT USING JS/CSS/HTML (SEE CODING ABILITY ABOVE) - BASE APP CREATED, NOW BRANCHED TO FEATURE TO CONTINUE BELOW
 
- 
- 
+
+
+ SYSTEM REQUIREMENTS TO RUN APP:
+
+ Google Chrome Browser preferred (See EDGE bug below in stretch targets - Does run but with visual issue)
+
+ Live Server - (right click HTML file and open in live server if extension in place) npx live-server .
+
+ Local Storage
+
+
+
 STRETCH TARGETS POST MVP:
  
 - Restyle/Add Header and Footer - COMPLETED
@@ -55,11 +65,11 @@ STRETCH TARGETS POST MVP:
  - Mobile compatible? (media query) - COMPLETED/NOT NEEDED DUE TO LAYOUT SCALING FINE ANYWAY
 
  - Add audio alert based on date/time (linked to time 18:00 inday) - Stretch Target - COMPLETED 
-  ADDITIONAL STRETCH - ADD ESTIMATED COMPLETION TIME ON INPUT SO ALERT ABOVE DOESNT GENERICALLY TRIGGER @ 18:00?
+  ADDITIONAL STRETCH - ADD ESTIMATED COMPLETION TIME ON INPUT SO ALERT ABOVE DOESNT GENERICALLY TRIGGER @ 18:00? (Undecided on this as would be frustrating to estiamte time up front)
  
  - Add button to resort entries into ascending/descending - COMPLETED
  
- - Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date).  - STRETCH TARGET - COMPLETED BUT EDGE BUG NOT RESOLVED
+ - Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date).  - STRETCH TARGET - COMPLETED BUT EDGE BUG NOT RESOLVED - COULD NOT RESOLVE WITH MANY ATTEMPTS/DIFFERENT TECHNIQUES/COACH SO ADDED README REQUIREMENT NEEDS TO BE CHROME ETC TO FUNCTION WITHOUT ERROR (CANNOT BE RESOLVED WITHOUT MAJOR CHANGES)
  
 - Publish/Present
  
@@ -78,4 +88,3 @@ Information sources:
 - YouTube To-Do App tutorial for basic framework – (SEE CODING ABILITY ABOVE)
 
 - Direct Coach Support
-
