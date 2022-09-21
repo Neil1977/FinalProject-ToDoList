@@ -49,10 +49,32 @@ MVP:
  Live Server - (right click HTML file and open in live server if extension in place) npx live-server .
 
  Local Storage
-
-
-
-STRETCH TARGETS POST MVP:
+ 
+ 
+ App Usage instructions:
+ 
+ 
+ Add name for personal greeting (will save to local storage)
+ 
+ add a "to-Do" item and select if it is a work related activity (Personal) or work related (Business)
+ 
+ select "Add todo"
+ 
+ (Will add to list and timestamp when added automatically)
+ 
+ Toggle switch can change order if needed
+ 
+ Selecting radio button will give ability to mark as completed (crossed off list)
+ 
+ Edit will allow you to change entry
+ 
+ Delete will allow you to remove entry (but will save to local storage if not crossed out/marked as done 1st)
+ 
+ If any todo items not crossed off as done by 18:00 will sound audio alert to notify
+ 
+ 
+ 
+ STRETCH TARGETS POST MVP:
  
 - Restyle/Add Header and Footer - COMPLETED
 
@@ -65,13 +87,13 @@ STRETCH TARGETS POST MVP:
  - Mobile compatible? (media query) - COMPLETED/NOT NEEDED DUE TO LAYOUT SCALING FINE ANYWAY
 
  - Add audio alert based on date/time (linked to time 18:00 inday) - Stretch Target - COMPLETED 
-  ADDITIONAL STRETCH - ADD ESTIMATED COMPLETION TIME ON INPUT SO ALERT ABOVE DOESNT GENERICALLY TRIGGER @ 18:00?
+  ADDITIONAL STRETCH - ADD ESTIMATED COMPLETION TIME ON INPUT SO ALERT ABOVE DOESNT GENERICALLY TRIGGER @ 18:00? (Undecided on this as would be frustrating to estiamte time up front)
  
  - Add button to resort entries into ascending/descending - COMPLETED
  
  - Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date).  - STRETCH TARGET - COMPLETED BUT EDGE BUG NOT RESOLVED - COULD NOT RESOLVE WITH MANY ATTEMPTS/DIFFERENT TECHNIQUES/COACH SO ADDED README REQUIREMENT NEEDS TO BE CHROME ETC TO FUNCTION WITHOUT ERROR (CANNOT BE RESOLVED WITHOUT MAJOR CHANGES)
  
-- Publish/Present
+- Publish/Present - STILL TO FINALISE
  
  
 
