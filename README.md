@@ -58,7 +58,7 @@ MVP:
  
  add a "to-Do" item and select if it is a work related activity (Personal) or work related (Business)
  
- Select "Add todo" - NOT WORKING CORRECTLY SINCE CHANGES - CAN ADD ITEM WITHOUT SELECTING CATEGORY FIRST - AMEND?
+ Select "Add todo" 
  
  (Will add to list and timestamp when added automatically)
  
@@ -68,7 +68,7 @@ MVP:
  
  Edit will allow you to change entry
  
- Delete will allow you to remove entry (once marked as done) - NOT WORKING CORRECTLY - can delete without marking as done?!
+ Delete will allow you to remove entry (only once marked as done) 
  
  If any todo items not crossed off as done by 18:00 will sound audio alert to notify
  
@@ -86,12 +86,11 @@ MVP:
  
  - Mobile compatible? (media query) - COMPLETED/NOT NEEDED DUE TO LAYOUT SCALING FINE ANYWAY
 
- - Add audio alert based on date/time (linked to time 18:00 inday) - Stretch Target - COMPLETED 
-  ADDITIONAL STRETCH - ADD ESTIMATED COMPLETION TIME ON INPUT SO ALERT ABOVE DOESNT GENERICALLY TRIGGER @ 18:00? (Undecided on this as would be frustrating to estiamte time up front)
+ - Add audio alert based on date/time (linked to time 18:00 inday) - COMPLETED
  
  - Add button to resort entries into ascending/descending - COMPLETED
  
- - Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date).  - STRETCH TARGET - COMPLETED BUT EDGE BUG NOT RESOLVED - COULD NOT RESOLVE WITH MANY ATTEMPTS/DIFFERENT TECHNIQUES/COACH SO ADDED README REQUIREMENT NEEDS TO BE CHROME ETC TO FUNCTION WITHOUT ERROR (CANNOT BE RESOLVED WITHOUT MAJOR CHANGES)
+ - Display more of todo in visible list without having to use "edit" button and cursor across Add button to see all "VIEW"/amend span?) - Also display time added (not date).  - STRETCH TARGET - COMPLETED BUT EDGE BUG NOT RESOLVED - COULD NOT RESOLVE WITH MANY ATTEMPTS/DIFFERENT TECHNIQUES/COACH SO ADDED README REQUIREMENT NEEDS TO BE CHROME ETC TO FUNCTION WITHOUT ERROR (CANNOT BE RESOLVED WITHOUT MAJOR CHANGES - TIMEFRAMES)
  
 - Publish/Present - STILL TO FINALISE
  
