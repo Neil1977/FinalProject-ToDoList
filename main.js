@@ -122,7 +122,7 @@ function DisplayTodos(isAscending = false) {
                 todoItem.classList.add('done');
             }
 
-            //ADDED ALERT LINKED TO TIMESTAMP TO SOUND ALERT IF 18:00 RECAHED AND TODO ITEM LEFT INCOMPLETED
+            //ADDED ALERT LINKED TO TIMESTAMP TO SOUND ALERT IF 18:00 REACHED AND TODO ITEM LEFT INCOMPLETED
             const date = new Date();
             const time = date.getHours();
             if (time >= 18) {
