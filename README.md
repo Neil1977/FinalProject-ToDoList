@@ -58,7 +58,7 @@ MVP:
  
  add a "to-Do" item and select if it is a work related activity (Personal) or work related (Business)
  
- select "Add todo"
+ Select "Add todo" - NOT WORKING CORRECTLY SINCE CHANGES - CAN ADD ITEM WITHOUT SELECTING CATEGORY FIRST - AMEND?
  
  (Will add to list and timestamp when added automatically)
  
@@ -68,7 +68,7 @@ MVP:
  
  Edit will allow you to change entry
  
- Delete will allow you to remove entry (but will save to local storage if not crossed out/marked as done 1st)
+ Delete will allow you to remove entry (once marked as done) - NOT WORKING CORRECTLY - can delete without marking as done?!
  
  If any todo items not crossed off as done by 18:00 will sound audio alert to notify
  
