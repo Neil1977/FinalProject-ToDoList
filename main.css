@@ -1,3 +1,4 @@
+/*SETTING GENERAL CSS VARIABLES BELOW - REUSABLE*/
 :root {
     --primary: #EA40A4;
     --business: #3a82ee;
@@ -6,92 +7,9 @@
     --grey: #888;
     --dark: #313154;
     --danger: #ff5b57;
-
     --shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-
     --business-glow: 0px 0px 4px rgba(58, 130, 238, 0.75);
     --personal-glow: 0px 0px 4px rgba(234, 64, 164, 0.75);
-}
-
-header {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    display: flex;
-    flex-direction: column;
-    height: 30vh;
-    width: 100vw;
-}
-
-/*ADDING STYLE FOR DATE/TIME WIDGET
-.datetime {
-    font-size: 16px;
-    padding: 24px;
-    color:#313154;
-    background: #EEE;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    border-right: 10px #313154 solid;
-    width:400px;
-    font-weight:400;
-    font-family:'montserrat', sans-serif;
-}
-
-.time {
-    font-size: 3em;
-    color: #313154;
-    }
-
-
-.date {
-    margin-top: 12px;
-    font-size: 1.75em;
-}
-ADDING STYLE FOR DATE/TIME WIDGET*/
-
-/*ADDING BUTTON TO TOGGLE ORDER OF DATED ENTRIES (ASCENDING/DESCENDING ETC)
-.dateFilter {
-    overflow:hidden;
-}
-.filterDiv {
-float: left;
-background-color: var(--primary);
-color: #EEE;
-width: 100px;
-line-height: 100px;
-text-align: center;
-margin: 2px;
-}
-*/
-
-.bg-img {
-    background-repeat: repeat-x;
-    background-size: contain;
-    background-position: center;
-    background-color: white;
-}
-
-.header-image {
-    background-image: url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
-    height: 25%;
-}
-
-
-.header-image2 {
-    background-image: url("https://pathwayctm.com/wp-content/uploads/2017/08/direct_line_group_logo_tall-e1472651551206.png");
-    height: 75%;
-}
-
-footer {
-    display: flex;
-    flex-direction: column;
-    height: 10vh;
-    width: 100vw;
-}
-
-.footer-image {
-    background-image: url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
-    height: 100%;
 }
 
 * {
@@ -110,11 +28,140 @@ button {
     cursor: initial;
 }
 
+/* Had difficulty getting header to stay in place without obscuring content on scroll (background images - resolved by setting position as sticky but also Z index as 999) */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 100vw;
+}
+
+/* Added styling for calendar on front of app*/
+.time {
+    margin-top: 12px;
+    font-size: 3em;
+    color: #313154;
+    padding-left: 1.5rem;
+}
+
+/* Added styling for calendar on front of app*/
+.date {
+    margin-top: 12px;
+    font-size: 1.75em;
+    color: #313154;
+    padding-left: 1.5rem;
+}
+
+/*Styling below for toggle switch added for entry reordering by timestamp*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/*Styling below for toggle switch added for entry reordering by timestamp*/
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/*Styling below for toggle switch added for entry reordering by timestamp*/
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #EA40A4;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/*Styling below for toggle switch added for entry reordering by timestamp*/
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/*Styling below for toggle switch added for entry reordering by timestamp*/
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+/*Styling below for toggle switch added for entry reordering by timestamp*/
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+/*Styling below for toggle switch added for entry reordering by timestamp*/
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/*Styling below for toggle switch added for entry reordering by timestamp*/
+.slider.round {
+    border-radius: 34px;
+}
+
+/*Styling below for toggle switch added for entry reordering by timestamp*/
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*Setting Multiverse/DLG logos in headers to repeat and scale on changing screen size*/
+.bg-img {
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    background-color: white;
+}
+
+/*Setting Multiverse/DLG logos in headers*/
+.header-image {
+    background-image: url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
+    height: 25%;
+}
+
+/*Setting Multiverse/DLG logos in headers*/
+.header-image2 {
+    background-image: url("https://pathwayctm.com/wp-content/uploads/2017/08/direct_line_group_logo_tall-e1472651551206.png");
+    height: 75%;
+}
+
+/*Used Multiverse logo only for footer due to image size - also wanted to remain statick unlike header*/
+footer {
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
+    width: 100vw;
+}
+
+/*Used Multiverse logo only for footer*/
+.footer-image {
+    background-image: url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
+    height: 100%;
+}
+
+/*SETTING BODY AND SECTION STYLES BELOW*/
 body {
     background: var(--light);
     color: var(--dark);
 }
-
 
 section {
     margin-top: 2rem;
@@ -131,6 +178,13 @@ h3 {
 }
 
 h4 {
+    color: var(--grey);
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+h5 {
     color: var(--grey);
     font-size: 0.875rem;
     font-weight: 700;
@@ -154,8 +208,9 @@ h4 {
     font-weight: 700;
 }
 
-/*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
+/*SETTING STYLING FOR BUSINESS/PERSONAL RADIO BUTTONS BELOW*/
 .create-todo input[type="text"] {
+    flex-direction: column;
     display: block;
     width: 100%;
     font-size: 1.125rem;
@@ -186,11 +241,13 @@ h4 {
     cursor: pointer;
 }
 
+/*TICKBOXES FOR TODOLIST ITEMS ADDED BELOW BUT AS NON VISIBLE TO THEN RESTYLE*/
 input[type="radio"],
 input[type="checkbox"] {
     display: none;
 }
 
+/*Restyling with "bubble" effect buttons*/
 .bubble {
     display: flex;
     align-items: center;
@@ -202,11 +259,13 @@ input[type="checkbox"] {
     box-shadow: var(--business-glow);
 }
 
+/*Restyling with "bubble" effect buttons*/
 .bubble.personal {
     border-color: var(--personal);
     box-shadow: var(--personal-glow);
 }
 
+/*ADDED TRANSITION/ANIMATION AFTER SELECTED BELOW*/
 .bubble::after {
     content: "";
     display: block;
@@ -219,17 +278,20 @@ input[type="checkbox"] {
     transition: 0.2s ease-in-out;
 }
 
+/*ADDED TRANSITION/ANIMATION AFTER SELECTED BELOW*/
 .bubble.personal::after {
     background-color: var(--personal);
     box-shadow: var(--personal-glow);
 }
 
+/*ADDED TRANSITION/ANIMATION AFTER SELECTED BELOW*/
 input:checked~.bubble::after {
     width: 10px;
     height: 10px;
     opacity: 1;
 }
 
+/*RESPACING AND STYLING INPUT BLOCK/BUTTONS BELOW*/
 .create-todo .options label div {
     color: var(--dark);
     font-size: 1.125rem;
@@ -249,10 +311,12 @@ input:checked~.bubble::after {
     transition: 0.2s ease-in-out;
 }
 
+/*ADDS EFFECT WHEN HOVERING MOUSE OVER ADD ITEM BAR*/
 .create-todo input[type="submit"]:hover {
     opacity: 0.75;
 }
 
+/*STYLING FOR TODO ITEMS ONCE ADDED*/
 .todo-list .list {
     margin: 1rem 0;
 }
@@ -274,12 +338,19 @@ input:checked~.bubble::after {
 }
 
 .todo-item .todo-content {
-    flex: 1 1 0%;
+    flex: 1 1 auto;
+    height: fit-content;
 }
-/*Display more of todo in visible list (without having to use "edit" button and cursor across)*/
-.todo-item .todo-content input {
+
+
+.todo-item .todo-content .input-text {
     color: var(--dark);
     font-size: 1.125rem;
+    border: none;
+    height: fit-content;
+    width: 100%;
+    overflow-wrap: break-word;
+
 }
 
 .todo-item .actions {
@@ -300,6 +371,7 @@ input:checked~.bubble::after {
     opacity: 0.75;
 }
 
+/*STYLING FOR TODO ITEMS EDIT/DELETE ETC BELOW*/
 .todo-item .actions .edit {
     margin-right: 0.5rem;
     background-color: var(--primary);
@@ -309,7 +381,8 @@ input:checked~.bubble::after {
     background-color: var(--danger);
 }
 
-.todo-item.done .todo-content input {
+/*PUTS LINE THROUGH ITEM WHEN COMPLETED*/
+.todo-item.done .todo-content .input-text {
     text-decoration: line-through;
     color: var(--grey);
 }
