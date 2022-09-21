@@ -46,20 +46,20 @@
 
             <form id="new-todo-form">
                 <h4>What's on your todo list?</h4>
-                <input type="text" name="content" id="content" placeholder="e.g. make a video" />
+                <input type="text" name="content" id="content" placeholder="e.g. make a video" required/>
 
                 <!--SECTION BELOW CREATES INPUT FIELD FOR MAKING A TODO ITEM EITHER AS BUSINESS OR PERSONAL WITH RADIO BUTTON-->
                 <h4>Pick a category</h4>
                 <div class="options">
 
                     <label>
-                        <input type="radio" name="category" id="category1" value="business" />
+                        <input type="radio" name="category" id="category1" value="business"  required/>
                         <span class="bubble business"></span>
                         <div>Business</div>
                     </label>
 
                     <label>
-                        <input type="radio" name="category" id="category2" value="personal" />
+                        <input type="radio" name="category" id="category2" value="personal" required/>
                         <span class="bubble personal"></span>
                         <div>Personal</div>
                     </label>
