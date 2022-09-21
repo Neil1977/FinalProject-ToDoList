@@ -27,6 +27,7 @@ button {
     background: none;
     cursor: initial;
 }
+
 /* Had difficulty getting header to stay in place without obscuring content on scroll (background images - resolved by setting position as sticky but also Z index as 999) */
 header {
     position: sticky;
@@ -37,6 +38,7 @@ header {
     height: 30vh;
     width: 100vw;
 }
+
 /* Added styling for calendar on front of app*/
 .time {
     margin-top: 12px;
@@ -52,6 +54,7 @@ header {
     color: #313154;
     padding-left: 1.5rem;
 }
+
 /*Styling below for toggle switch added for entry reordering by timestamp*/
 .switch {
     position: relative;
