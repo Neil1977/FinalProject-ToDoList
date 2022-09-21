@@ -88,6 +88,7 @@ function DisplayTodos(isAscending = false) {
             span.classList.add('bubble');
 
             //Seperating todos into business & Personal (span)
+            // Select "Add todo" - NOT WORKING CORRECTLY SINCE CHANGES - CAN ADD ITEM WITHOUT SELECTING CATEGORY FIRST - AMEND?
             if (todo.category == 'personal') {
                 span.classList.add('personal');
             } else {
@@ -137,6 +138,7 @@ function DisplayTodos(isAscending = false) {
             }
 
             //Setting on click event listener for input and adding to local storage and redisplaying todos once done
+            //seems to be only sending first entry added to local storage now - AMEND HERE?
             input.addEventListener('click', e => {
                 todo.done = e.target.checked;
                 localStorage.setItem('todos', JSON.stringify(todos));
@@ -164,6 +166,7 @@ function DisplayTodos(isAscending = false) {
             })
 
             //Setting on click event listener to delete when completed (filter)
+            // Delete will allow you to remove entry (once marked as done) - NOT WORKING CORRECTLY - can delete without marking as done?! - AMEND HERE?
             deleteButton.addEventListener('click', e => {
                 todos = todos.filter(t => t != todo);
                 localStorage.setItem('todos', JSON.stringify(todos));
