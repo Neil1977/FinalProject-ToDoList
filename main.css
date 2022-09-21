@@ -27,7 +27,7 @@ button {
     background: none;
     cursor: initial;
 }
-
+/* Had difficulty getting header to stay in place without obscuring content on scroll (background images - resolved by setting position as sticky but also Z index as 999) */
 header {
     position: sticky;
     top: 0;
@@ -37,7 +37,7 @@ header {
     height: 30vh;
     width: 100vw;
 }
-
+/* Added styling for calendar on front of app*/
 .time {
     margin-top: 12px;
     font-size: 3em;
@@ -45,14 +45,14 @@ header {
     padding-left: 1.5rem;
 }
 
-
+/* Added styling for calendar on front of app*/
 .date {
     margin-top: 12px;
     font-size: 1.75em;
     color: #313154;
     padding-left: 1.5rem;
 }
-
+/*Styling below for toggle switch added for entry reordering by timestamp*/
 .switch {
     position: relative;
     display: inline-block;
@@ -60,12 +60,14 @@ header {
     height: 34px;
 }
 
+/*Styling below for toggle switch added for entry reordering by timestamp*/
 .switch input {
     opacity: 0;
     width: 0;
     height: 0;
 }
 
+/*Styling below for toggle switch added for entry reordering by timestamp*/
 .slider {
     position: absolute;
     cursor: pointer;
@@ -78,6 +80,7 @@ header {
     transition: .4s;
 }
 
+/*Styling below for toggle switch added for entry reordering by timestamp*/
 .slider:before {
     position: absolute;
     content: "";
@@ -90,28 +93,34 @@ header {
     transition: .4s;
 }
 
+/*Styling below for toggle switch added for entry reordering by timestamp*/
 input:checked+.slider {
     background-color: #2196F3;
 }
 
+/*Styling below for toggle switch added for entry reordering by timestamp*/
 input:focus+.slider {
     box-shadow: 0 0 1px #2196F3;
 }
 
+/*Styling below for toggle switch added for entry reordering by timestamp*/
 input:checked+.slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
 }
 
+/*Styling below for toggle switch added for entry reordering by timestamp*/
 .slider.round {
     border-radius: 34px;
 }
 
+/*Styling below for toggle switch added for entry reordering by timestamp*/
 .slider.round:before {
     border-radius: 50%;
 }
 
+/*Setting Multiverse/DLG logos in headers to repeat and scale on changing screen size*/
 .bg-img {
     background-repeat: repeat-x;
     background-size: contain;
@@ -119,17 +128,19 @@ input:checked+.slider:before {
     background-color: white;
 }
 
+/*Setting Multiverse/DLG logos in headers*/
 .header-image {
     background-image: url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
     height: 25%;
 }
 
-
+/*Setting Multiverse/DLG logos in headers*/
 .header-image2 {
     background-image: url("https://pathwayctm.com/wp-content/uploads/2017/08/direct_line_group_logo_tall-e1472651551206.png");
     height: 75%;
 }
 
+/*Used Multiverse logo only for footer due to image size - also wanted to remain statick unlike header*/
 footer {
     display: flex;
     flex-direction: column;
@@ -137,12 +148,11 @@ footer {
     width: 100vw;
 }
 
+/*Used Multiverse logo only for footer*/
 .footer-image {
     background-image: url("https://th.bing.com/th/id/OIP.yKlZZja7EKZflNZFd3bGCQHaCN?pid=ImgDet&rs=1");
     height: 100%;
 }
-
-
 
 /*SETTING BODY AND SECTION STYLES BELOW*/
 body {
@@ -234,6 +244,7 @@ input[type="checkbox"] {
     display: none;
 }
 
+/*Restyling with "bubble" effect buttons*/
 .bubble {
     display: flex;
     align-items: center;
@@ -245,6 +256,7 @@ input[type="checkbox"] {
     box-shadow: var(--business-glow);
 }
 
+/*Restyling with "bubble" effect buttons*/
 .bubble.personal {
     border-color: var(--personal);
     box-shadow: var(--personal-glow);
@@ -263,11 +275,13 @@ input[type="checkbox"] {
     transition: 0.2s ease-in-out;
 }
 
+/*ADDED TRANSITION/ANIMATION AFTER SELECTED BELOW*/
 .bubble.personal::after {
     background-color: var(--personal);
     box-shadow: var(--personal-glow);
 }
 
+/*ADDED TRANSITION/ANIMATION AFTER SELECTED BELOW*/
 input:checked~.bubble::after {
     width: 10px;
     height: 10px;
