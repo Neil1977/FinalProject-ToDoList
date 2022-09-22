@@ -48,6 +48,8 @@ MVP:
 
  Live Server - (right click HTML file and open in live server if extension in place) npx live-server .
 
+ Also now published on netlify so above not needed to run https://stirring-puffpuff-36090a.netlify.app/
+
  Local Storage
  
  
